@@ -1,3 +1,3 @@
 CAD Files of the game pieces.
 
-![My Gear](github.com/BenzeneBots/2017FRC/CAD Game Pieces/Gear.png)
+![My Gear](https://raw.githubusercontent.com/BenzeneBots/2017FRC/master/CAD Game Pieces/Gear.png)
