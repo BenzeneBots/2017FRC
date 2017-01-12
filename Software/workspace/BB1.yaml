@@ -118,9 +118,15 @@ Children:
         default: []
         name: Default command parameters
         validators: null
-        value: []
+        value:
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: X, type: double,
+          value: '0'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: Y, type: double,
+          value: '0'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: Z, type: double,
+          value: '0'}
       Default Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
-        name: Default Command, type: Command, validators: null, value: None}
+        name: Default Command, type: Command, validators: null, value: Drive With Joysticks}
       Constants: !!robotbuilder.data.properties.ConstantsProperty
         default: []
         name: Constants
@@ -131,7 +137,17 @@ Children:
   Properties: {}
   Base: Subsystems
   Name: Subsystems
-- Children: []
+- Children:
+  - Children: []
+    Properties:
+      Number: !!robotbuilder.data.properties.ChoicesProperty
+        choices: ['0', '1', '2', '3', '4', '5']
+        default: 1
+        name: Number
+        validators: [Joystick]
+        value: '0'
+    Base: Joystick
+    Name: Joystick 1
   Properties: {}
   Base: OI
   Name: Operator Interface
@@ -154,6 +170,33 @@ Children:
         name: Button on SmartDashboard, validators: null, value: true}
     Base: Command
     Name: Autonomous Command
+  - Children: []
+    Properties:
+      Parameters: !!robotbuilder.data.properties.ParametersProperty
+        default: []
+        name: Parameters
+        validators: null
+        value:
+        - !!robotbuilder.data.properties.ParameterDescriptor {name: X, type: double}
+        - !!robotbuilder.data.properties.ParameterDescriptor {name: Y, type: double}
+        - !!robotbuilder.data.properties.ParameterDescriptor {name: Z, type: double}
+      Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
+        name: Requires, type: Subsystem, validators: null, value: Drive}
+      Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
+        default: &id004
+        - !!robotbuilder.data.properties.ParameterSet
+          name: defJoy
+          parameters:
+          - {name: X, type: double, value: '0'}
+          - {name: Y, type: double, value: '0'}
+          - {name: Z, type: double, value: '0'}
+        name: Parameter presets
+        validators: null
+        value: *id004
+      Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
+        name: Button on SmartDashboard, validators: null, value: true}
+    Base: Command
+    Name: Drive With Joysticks
   Properties: {}
   Base: Commands
   Name: Commands
