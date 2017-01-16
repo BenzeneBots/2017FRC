@@ -52,7 +52,7 @@ void Liftoff::Execute() {
 // Make this return true when this Command no longer needs to run execute()
 bool Liftoff::IsFinished() {
 	// ToDo: How will we know when to stop the climber spool motor?
-    return IsTimedOut() || RobotMap::climberEndofRopeLimitSW;
+    return IsTimedOut() || RobotMap::climber_EndofRopeLimitSW;
 }
 
 // Called once after isFinished returns true
