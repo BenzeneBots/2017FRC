@@ -41,8 +41,9 @@ void Shooter::InitDefaultCommand() {
 // here. Call these from Commands.
 
 void Shooter::Spin(){
-	shooterMotor->Set(1);
-	printf("Spinning\n");
+    shooterMotor->SetControlMode(CANSpeedController::kSpeed); // Set speed control mode
+	shooterMotor->Set(120); // Set RPM to 120 for testing
+	printf("Motor spinning\n");
 }
 
 void Shooter::Stop(){
