@@ -30,12 +30,18 @@ void Shoot::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void Shoot::Execute() {
-	Robot::shooter->Spin();
+
+		Robot::shooter->Spin();
+	printf("shooter execute\n");
 }
 
 // Make this return true when this Command no longer needs to run execute()
+
 bool Shoot::IsFinished() {
-    return false;
+
+	// // when the button is released the return is true stopping the command
+	bool buttonVal = Robot::oi->getManipulator()->GetRawButton(1);
+    return !buttonVal;   // // inverted as true is stop
 }
 
 // Called once after isFinished returns true

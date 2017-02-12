@@ -81,11 +81,9 @@ void Robot::TeleopInit() {
 		autonomousCommand->Cancel();
 	}
 
-	//Sets Victors for the drive
-	left1 = new Victor(1);
-	left2 = new Victor(2);
-	right1 = new Victor(3);
-	right2 = new Victor(4);
+	printf("TeleopInit\n");
+
+
 }
 
 // Gets called (or should get called) every 20ms when in teleop mode.
@@ -95,6 +93,8 @@ void Robot::TeleopPeriodic() {
 
 void Robot::TestPeriodic() {
 	lw->Run();
+
+
 }
 
 START_ROBOT_CLASS(Robot);

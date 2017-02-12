@@ -28,13 +28,13 @@ OI::OI() {
     manipulator.reset(new Joystick(1));
     
     manipA.reset(new JoystickButton(manipulator.get(), 1));
-    manipA->WhileHeld(new Shoot());
+    manipA->WhenPressed(new Shoot());
     manipLT.reset(new JoystickButton(manipulator.get(), 5));
-    manipLT->WhileHeld(new FloorLoad());
+    manipLT->WhenPressed(new FloorLoad());
     driver.reset(new Joystick(0));
     
     drvA.reset(new JoystickButton(driver.get(), 1));
-    drvA->WhileHeld(new Liftoff());
+    drvA->WhenPressed(new Liftoff());
 
     // SmartDashboard Buttons
     SmartDashboard::PutData("Shoot", new Shoot());

@@ -48,7 +48,7 @@ void RobotMap::init() {
     driveStrafe.reset(new VictorSP(2));
     lw->AddActuator("Drive", "Strafe", std::static_pointer_cast<VictorSP>(driveStrafe));
     
-    intakeIntakeMotor.reset(new VictorSP(4));
+    intakeIntakeMotor.reset(new VictorSP(3));
     lw->AddActuator("Intake", "IntakeMotor", std::static_pointer_cast<VictorSP>(intakeIntakeMotor));
     
     shooterShooterMotor.reset(new CANTalon(10));

@@ -30,18 +30,25 @@ void FloorLoad::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void FloorLoad::Execute() {
+    printf("in execute of floor load\n");
 	Robot::intake->Spin();
-	printf("Command\n");
+
 }
 
 // Make this return true when this Command no longer needs to run execute()
 bool FloorLoad::IsFinished() {
-    return false;
+
+	printf("IsFinished called\n");
+	bool buttonVal= Robot::oi->getManipulator()->GetRawButton(5);
+	return !buttonVal;
 }
 
 // Called once after isFinished returns true
 void FloorLoad::End() {
+
 	Robot::intake->Stop();
+
+	printf("STOP!\n");
 }
 
 // Called when another command which requires one or more of the same

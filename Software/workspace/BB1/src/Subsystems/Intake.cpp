@@ -41,11 +41,11 @@ void Intake::InitDefaultCommand() {
 // here. Call these from Commands.
 
 void Intake::Spin(){
-	intakeMotor->Set(1.0);
-	printf("Spinning\n");
+	intakeMotor->Set(.2);
+	printf("Spinning Intake\n");
 }
 
 void Intake::Stop(){
-	intakeMotor->Set(0);
+	intakeMotor->Set(0.0);
 }
 

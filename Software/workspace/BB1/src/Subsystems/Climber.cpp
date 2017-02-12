@@ -41,7 +41,7 @@ void Climber::InitDefaultCommand() {
 // here. Call these from Commands.
 
 void Climber::Spin(){
-	climberMotor->Set(1);
+	climberMotor->Set(.7);
 }
 
 void Climber::Stop(){

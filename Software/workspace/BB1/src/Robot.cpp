@@ -81,8 +81,8 @@ void Robot::TeleopInit() {
 		autonomousCommand->Cancel();
 	}
 
-	//Sets Victors for the drive
 	printf("TeleopInit\n");
+
 
 }
 
@@ -93,6 +93,8 @@ void Robot::TeleopPeriodic() {
 
 void Robot::TestPeriodic() {
 	lw->Run();
+
+
 }
 
 START_ROBOT_CLASS(Robot);
