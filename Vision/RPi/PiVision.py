@@ -1,13 +1,13 @@
-# 
-# Benzene Bots - Python Vision for Raspberry Pi
-# 
-# The is the master Python code that calls the vision pipeline code that was 
-# generate by Grip.  Basic vision processing and tuning is done in the Grip
-# application.  Advanced final vision processing is done within the code 
-# below.  Also, the vision results are sent out using the NetworkTables library.
+#	Raspberry Pi Vision - 2017 Season - Steamworks
 #
-# Last Updated: JKemp Feb 2017
-# 
+#		Benzene Bots - FRC Team #4384
+#
+# This program loads an OpenCV vision pipeline that was previously 
+# generated using Grip.  The Grip python code is loaded using an
+# import statement.  This loads a callable object that processes 
+# one frame of video.  The results are then returned here as a set 
+# of contours. 
+#
 
 import numpy as np
 import argparse
@@ -23,10 +23,14 @@ import logging
 logging.basicConfig( level=logging.DEBUG )
 
 # Code generated from Grip's Python export feature.
-from gripgreen import GripPipeline
+from grn import GripPipeline
 
-NetworkTables.initialize( server='10.43.84.2' )
-sd = NetworkTables.getTable( "SmartDashboard" )
+NetworkTables.initialize( server='10.43.84.81' )
+#NetworkTables.initialize( server='roborio-4384-frc.local' )
+
+# This adds 'Vision' to the Network Table as a sub folder under 'root'.
+sd = NetworkTables.getTable( 'Vision' )
+print "sd: ", sd
 
 grip = GripPipeline()
 
@@ -36,8 +40,8 @@ cam.resolution = (640, 480)
 cam.framerate = 32
 rawCapture = PiRGBArray( cam, size=(640,480) )
 
-cam.iso = 100
-cam.brightness = 35
+#cam.iso = 100
+#cam.brightness = 35
 
 # These are the default Pi Camera settings.
 print "Sharpness: ", cam.sharpness
@@ -64,7 +68,8 @@ print "Zoom: ", cam.zoom
 #cam.crop = (0.0, 0.0, 1.0, 1.0)
 print
 
-time.sleep( 0.1 ) # Camera Warmup Time
+time.sleep( 0.1 )	# Camera Warmup Time
+i=0			# Init heartbeat counter.
 
 # Loop until 'q' keypress.
 for imgArray in cam.capture_continuous( rawCapture, format="bgr", use_video_port=True ):
@@ -73,16 +78,24 @@ for imgArray in cam.capture_continuous( rawCapture, format="bgr", use_video_port
 
 	grip.process( frame )			# Process a frame using Grip.
 	contours = grip.filter_contours_output	# Get the contours found.
+	nContour = len( contours )
+	sd.putNumber( 'nContour', nContour )	# Send number of contours found.
 
-	if len( contours ) > 0:
+	if nContour > 0:
 		# Sort the contours and find the largest one.
 		cnt = sorted(contours, key = cv2.contourArea, reverse = True)[0]
 		# Compute the (rotated) bounding box around the largest.
 		rect = np.int32(cv2.boxPoints(cv2.minAreaRect(cnt)))
 		cv2.drawContours(frame, [rect], -1, (0, 0, 255), 2)
-		# print rect
+		sd.putNumberArray( 'Rect0', rect[0] );
+		sd.putNumberArray( 'Rect1', rect[1] );
+		sd.putNumberArray( 'Rect2', rect[2] );
+		sd.putNumberArray( 'Rect3', rect[3] );
+		print rect
+		print
 		# print "Num Contours: ", len( contours )
 		# print
+
 	cv2.imshow( "Target", frame )
 
 	# Must dump the frame before capturing another.
@@ -96,9 +109,15 @@ for imgArray in cam.capture_continuous( rawCapture, format="bgr", use_video_port
 		# Save frame as a captured JPG image on a 'p' key.
 		cv2.imwrite( "capture.jpg", frame )
 
+	# Keep a rolling counter going so RoboRio "knows" the Pi
+	# is up and running.  Kinda like a heartbeat.
+	sd.putNumber( 'PiCounter', i )
+	i = i+1		
+	if i > 100000: i=0
 
 	try:
-		print( 'robotTime:', sd.getNumber( 'robotTime' ))
+		t = sd.getNumber( 'robotTime' )
+		print( 'robotTime:', t )
 	except KeyError:
 		continue
 

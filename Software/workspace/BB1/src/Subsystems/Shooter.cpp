@@ -44,7 +44,6 @@ void Shooter::InitDefaultCommand() {
 // here. Call these from Commands.
 
 void Shooter::Spin(){
-
 	// // can talon intiatize and set the number of pulses per revolution , set PID , rpm
 	shooterMotor->SetFeedbackDevice(CANTalon::CtreMagEncoder_Relative);
 	shooterMotor->SetSensorDirection(-1);
@@ -59,11 +58,9 @@ void Shooter::Spin(){
 	shooterMotor->SetD(0.0);
 	*/
 
-    shooterMotor->SetControlMode(frc::CANSpeedController::kSpeed);
-	shooterMotor->Set(360.0);
-
-
-	printf("Spinning\n");
+    shooterMotor->SetControlMode(CANSpeedController::kSpeed); // Set speed control mode
+	shooterMotor->Set(120); // Set RPM to 120 for testing
+	printf("Motor spinning\n");
 }
 
 void Shooter::Stop(){
