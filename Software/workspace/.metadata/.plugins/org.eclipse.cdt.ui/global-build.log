@@ -1,607 +1,665 @@
-Info: Nothing to build for PacGoat
-16:16:57 **** Incremental Build of configuration Debug for project PacGoat ****
+11:22:57 **** Incremental Build of configuration Debug for project BB1 ****
 Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Pneumatics.o" "..\\src\\Subsystems\\Pneumatics.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Commands\\CheckForHotGoal.o" "src\\Commands\\CloseClaw.o" "src\\Commands\\Collect.o" "src\\Commands\\DriveAndShootAutonomous.o" "src\\Commands\\DriveForward.o" "src\\Commands\\DriveWithJoystick.o" "src\\Commands\\ExtendShooter.o" "src\\Commands\\LowGoal.o" "src\\Commands\\OpenClaw.o" "src\\Commands\\SetCollectionSpeed.o" "src\\Commands\\SetPivotSetpoint.o" "src\\Commands\\Shoot.o" "src\\Commands\\WaitForBall.o" "src\\Commands\\WaitForPressure.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Collector.o" "src\\Subsystems\\DriveTrain.o" "src\\Subsystems\\Pivot.o" "src\\Subsystems\\Pneumatics.o" "src\\Subsystems\\Shooter.o" "src\\Triggers\\DoubleButton.o" -lwpi 
-16:17:10 **** Clean-only build of configuration Debug for project PacGoat ****
-rm -rf src/Subsystems/Shooter.o src/Commands/LowGoal.d src/Robot.d src/Commands/ExtendShooter.o src/Subsystems/Pneumatics.o src/Subsystems/Shooter.d src/Subsystems/Pivot.o src/Subsystems/Pneumatics.d src/Commands/CheckForHotGoal.d src/Commands/LowGoal.o src/Commands/OpenClaw.d src/Commands/ExtendShooter.d src/Commands/WaitForBall.o src/Robot.o src/Commands/WaitForBall.d src/Subsystems/DriveTrain.o FRCUserProgram src/Commands/SetCollectionSpeed.o src/Commands/SetPivotSetpoint.o src/Commands/SetPivotSetpoint.d src/Commands/Shoot.o src/Commands/CloseClaw.d src/Commands/Shoot.d src/Commands/DriveWithJoystick.o src/Commands/DriveForward.o src/Commands/DriveWithJoystick.d src/Commands/DriveAndShootAutonomous.o src/Commands/SetCollectionSpeed.d src/OI.o src/Subsystems/DriveTrain.d src/Commands/DriveForward.d src/Commands/DriveAndShootAutonomous.d src/Commands/WaitForPressure.o src/OI.d src/Subsystems/Pivot.d src/Commands/WaitForPressure.d src/Triggers/DoubleButton.d src/Commands/OpenClaw.o src/Commands/Collect.o src/Subsystems/Collector.o src/Commands/CheckForHotGoal.o src/Commands/Collect.d src/Commands/CloseClaw.o src/Triggers/DoubleButton.o src/Subsystems/Collector.d 
-Cannot run program "rm": Launching failed
-
-Error: Program "rm" not found in PATH
-PATH=[\usr\local\bin;C:/Program Files/Java/jre1.8.0_101/bin/server;C:/Program Files/Java/jre1.8.0_101/bin;C:/Program Files/Java/jre1.8.0_101/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\frc\bin;C:\Program Files (x86)\SlickEdit\win;C:\Program Files\eclipse]
-
-16:17:10 **** Clean-only build of configuration Debug for project PacGoat ****
-16:17:12 **** Rebuild of configuration Debug for project PacGoat ****
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\FloorLoad.o" "..\\src\\Commands\\FloorLoad.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\ButtonDriveTest.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+11:23:12 **** Incremental Build of configuration Debug for project BB1 ****
 Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\DriveTrain.o" "..\\src\\Subsystems\\DriveTrain.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Collect.o" "..\\src\\Commands\\Collect.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Shoot.o" "..\\src\\Commands\\Shoot.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\DriveForward.o" "..\\src\\Commands\\DriveForward.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Collector.o" "..\\src\\Subsystems\\Collector.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Pneumatics.o" "..\\src\\Subsystems\\Pneumatics.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Pivot.o" "..\\src\\Subsystems\\Pivot.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\CloseClaw.o" "..\\src\\Commands\\CloseClaw.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\OpenClaw.o" "..\\src\\Commands\\OpenClaw.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\OI.o" "..\\src\\OI.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Triggers\\DoubleButton.o" "..\\src\\Triggers\\DoubleButton.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\SetPivotSetpoint.o" "..\\src\\Commands\\SetPivotSetpoint.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\WaitForBall.o" "..\\src\\Commands\\WaitForBall.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\CheckForHotGoal.o" "..\\src\\Commands\\CheckForHotGoal.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\SetCollectionSpeed.o" "..\\src\\Commands\\SetCollectionSpeed.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\LowGoal.o" "..\\src\\Commands\\LowGoal.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\DriveWithJoystick.o" "..\\src\\Commands\\DriveWithJoystick.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\ExtendShooter.o" "..\\src\\Commands\\ExtendShooter.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\DriveAndShootAutonomous.o" "..\\src\\Commands\\DriveAndShootAutonomous.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\WaitForPressure.o" "..\\src\\Commands\\WaitForPressure.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Commands\\CheckForHotGoal.o" "src\\Commands\\CloseClaw.o" "src\\Commands\\Collect.o" "src\\Commands\\DriveAndShootAutonomous.o" "src\\Commands\\DriveForward.o" "src\\Commands\\DriveWithJoystick.o" "src\\Commands\\ExtendShooter.o" "src\\Commands\\LowGoal.o" "src\\Commands\\OpenClaw.o" "src\\Commands\\SetCollectionSpeed.o" "src\\Commands\\SetPivotSetpoint.o" "src\\Commands\\Shoot.o" "src\\Commands\\WaitForBall.o" "src\\Commands\\WaitForPressure.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Collector.o" "src\\Subsystems\\DriveTrain.o" "src\\Subsystems\\Pivot.o" "src\\Subsystems\\Pneumatics.o" "src\\Subsystems\\Shooter.o" "src\\Triggers\\DoubleButton.o" -lwpi 
-16:26:27 **** Rebuild of configuration Debug for project Encoder ****
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\ButtonDriveTest.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+11:27:27 **** Incremental Build of configuration Debug for project BB1 ****
 Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\Encoder\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Robot.o" -lwpi 
-16:28:23 **** Incremental Build of configuration Debug for project Gyro ****
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\FloorLoad.o" "..\\src\\Commands\\FloorLoad.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\ButtonDriveTest.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+11:27:43 **** Incremental Build of configuration Debug for project BB1 ****
 Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\Gyro\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Robot.o" -lwpi 
-Info: Nothing to build for Gyro
-16:28:36 **** Rebuild of configuration Debug for project Encoder ****
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\ButtonDriveTest.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+11:33:54 **** Incremental Build of configuration Debug for project BB1 ****
 Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\Encoder\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Robot.o" -lwpi 
-Info: Nothing to build for Gyro
-Info: Nothing to build for PacGoat
-17:32:01 **** Incremental Build of configuration Debug for project Gyro ****
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\FloorLoad.o" "..\\src\\Commands\\FloorLoad.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\ButtonDriveTest.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+11:34:12 **** Incremental Build of configuration Debug for project BB1 ****
 Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\Gyro\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Robot.o" -lwpi 
-Info: Nothing to build for Gyro
-Info: Nothing to build for Encoder
-Info: Nothing to build for Gyro
-Info: Nothing to build for PacGoat
-Info: Nothing to build for cmdRobot
-16:26:30 **** Incremental Build of configuration Debug for project cmdRobot ****
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\ButtonDriveTest.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+11:38:49 **** Incremental Build of configuration Debug for project BB1 ****
 Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Elevator.o" "src\\Subsystems\\ExampleSubsystem.o" "src\\Triggers\\MyTrigger.o" -lwpi 
-16:26:43 **** Clean-only build of configuration Debug for project cmdRobot ****
-rm -rf src/Commands/ExampleCommand.d src/OI.d src/Subsystems/Elevator.d src/Subsystems/Elevator.o src/Triggers/MyTrigger.d FRCUserProgram src/CommandBase.d src/Subsystems/ExampleSubsystem.d src/Triggers/MyTrigger.o src/CommandBase.o src/Robot.o src/Subsystems/ExampleSubsystem.o src/Commands/ExampleCommand.o src/OI.o src/Robot.d 
-Cannot run program "rm": Launching failed
-
-Error: Program "rm" not found in PATH
-PATH=[\usr\local\bin;C:/Program Files/Java/jre1.8.0_101/bin/server;C:/Program Files/Java/jre1.8.0_101/bin;C:/Program Files/Java/jre1.8.0_101/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\frc\bin;C:\Program Files (x86)\SlickEdit\win;C:\Program Files\eclipse]
-
-16:26:43 **** Clean-only build of configuration Debug for project cmdRobot ****
-16:26:47 **** Rebuild of configuration Debug for project cmdRobot ****
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\AutonomousCommand.o" "..\\src\\Commands\\AutonomousCommand.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\FloorLoad.o" "..\\src\\Commands\\FloorLoad.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Shoot.o" "..\\src\\Commands\\Shoot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Liftoff.o" "..\\src\\Commands\\Liftoff.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Drive.o" "..\\src\\Subsystems\\Drive.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\OI.o" "..\\src\\OI.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\ButtonDriveTest.o" "..\\src\\Commands\\ButtonDriveTest.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\DriveWithJoysticks.o" "..\\src\\Commands\\DriveWithJoysticks.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\ButtonDriveTest.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+11:39:12 **** Incremental Build of configuration Debug for project BB1 ****
 Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\CommandBase.o" "..\\src\\CommandBase.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\ExampleCommand.o" "..\\src\\Commands\\ExampleCommand.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Elevator.o" "..\\src\\Subsystems\\Elevator.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\OI.o" "..\\src\\OI.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Triggers\\MyTrigger.o" "..\\src\\Triggers\\MyTrigger.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\ExampleSubsystem.o" "..\\src\\Subsystems\\ExampleSubsystem.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Elevator.o" "src\\Subsystems\\ExampleSubsystem.o" "src\\Triggers\\MyTrigger.o" -lwpi 
-Info: Nothing to build for cmdRobot
-Info: Nothing to build for cmdRobot
-Info: Nothing to build for cmdRobot
-Info: Nothing to build for cmdRobot
-Info: Nothing to build for cmdRobot
-Info: Nothing to build for cmdRobot
-19:26:55 **** Incremental Build of configuration Debug for project cmdRobot ****
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\ButtonDriveTest.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+11:41:24 **** Incremental Build of configuration Debug for project BB1 ****
 Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Elevator.o" "src\\Subsystems\\ExampleSubsystem.o" "src\\Triggers\\MyTrigger.o" -lwpi 
-Info: Nothing to build for cmdRobot
-Info: Nothing to build for cmdRobot
-Info: Nothing to build for cmdRobot
-Info: Nothing to build for cmdRobot
-Info: Nothing to build for cmdRobot
-Info: Nothing to build for cmdRobot
-Info: Nothing to build for cmdRobot
-23:54:41 **** Incremental Build of configuration Debug for project cmdRobot ****
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\FloorLoad.o" "..\\src\\Commands\\FloorLoad.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\ButtonDriveTest.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+11:41:34 **** Incremental Build of configuration Debug for project BB1 ****
 Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Elevator.o" "src\\Subsystems\\ExampleSubsystem.o" "src\\Triggers\\MyTrigger.o" -lwpi 
-Info: Nothing to build for cmdRobot
-18:48:04 **** Incremental Build of configuration Debug for project cmdRobot ****
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\ButtonDriveTest.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+12:19:16 **** Incremental Build of configuration Debug for project BB1 ****
 Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-In file included from C:\Users\James Kemp/wpilib/cpp/current/include/IterativeRobot.h:11:0,
-                 from C:\Users\James Kemp/wpilib/cpp/current/include/WPILib.h:61,
-                 from ..\src\Robot.cpp:1:
-..\src\Robot.cpp: In function 'int main()':
-C:\Users\James Kemp/wpilib/cpp/current/include/RobotBase.h:23:42: error: use of deleted function 'Robot::Robot()'
-     _ClassName_ *robot = new _ClassName_();                                  \
-                                          ^
-..\src\Robot.cpp:91:1: note: in expansion of macro 'START_ROBOT_CLASS'
- START_ROBOT_CLASS(Robot)
- ^
-..\src\Robot.cpp:6:7: note: 'Robot::Robot()' is implicitly deleted because the default definition would be ill-formed:
- class Robot: public IterativeRobot
-       ^
-..\src\Robot.cpp:6:7: error: no matching function for call to 'CANTalon::CANTalon()'
-..\src\Robot.cpp:6:7: note: candidates are:
-In file included from C:\Users\James Kemp/wpilib/cpp/current/include/WPILib.h:32:0,
-                 from ..\src\Robot.cpp:1:
-C:\Users\James Kemp/wpilib/cpp/current/include/CANTalon.h:204:12: note: CANTalon::CANTalon(int, int)
-   explicit CANTalon(int deviceNumber, int controlPeriodMs);
-            ^
-C:\Users\James Kemp/wpilib/cpp/current/include/CANTalon.h:204:12: note:   candidate expects 2 arguments, 0 provided
-C:\Users\James Kemp/wpilib/cpp/current/include/CANTalon.h:203:12: note: CANTalon::CANTalon(int)
-   explicit CANTalon(int deviceNumber);
-            ^
-C:\Users\James Kemp/wpilib/cpp/current/include/CANTalon.h:203:12: note:   candidate expects 1 argument, 0 provided
-19:00:42 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-..\src\Robot.cpp: In member function 'virtual void Robot::RobotInit()':
-..\src\Robot.cpp:24:12: error: no match for call to '(CANTalon) (int)'
-   m1Motor(1);
-            ^
-In file included from C:\Users\James Kemp/wpilib/cpp/current/include/IterativeRobot.h:11:0,
-                 from C:\Users\James Kemp/wpilib/cpp/current/include/WPILib.h:61,
-                 from ..\src\Robot.cpp:1:
-..\src\Robot.cpp: In function 'int main()':
-C:\Users\James Kemp/wpilib/cpp/current/include/RobotBase.h:23:42: error: use of deleted function 'Robot::Robot()'
-     _ClassName_ *robot = new _ClassName_();                                  \
-                                          ^
-..\src\Robot.cpp:95:1: note: in expansion of macro 'START_ROBOT_CLASS'
- START_ROBOT_CLASS(Robot)
- ^
-..\src\Robot.cpp:7:7: note: 'Robot::Robot()' is implicitly deleted because the default definition would be ill-formed:
- class Robot: public IterativeRobot
-       ^
-..\src\Robot.cpp:7:7: error: no matching function for call to 'CANTalon::CANTalon()'
-..\src\Robot.cpp:7:7: note: candidates are:
-In file included from C:\Users\James Kemp/wpilib/cpp/current/include/WPILib.h:32:0,
-                 from ..\src\Robot.cpp:1:
-C:\Users\James Kemp/wpilib/cpp/current/include/CANTalon.h:204:12: note: CANTalon::CANTalon(int, int)
-   explicit CANTalon(int deviceNumber, int controlPeriodMs);
-            ^
-C:\Users\James Kemp/wpilib/cpp/current/include/CANTalon.h:204:12: note:   candidate expects 2 arguments, 0 provided
-C:\Users\James Kemp/wpilib/cpp/current/include/CANTalon.h:203:12: note: CANTalon::CANTalon(int)
-   explicit CANTalon(int deviceNumber);
-            ^
-C:\Users\James Kemp/wpilib/cpp/current/include/CANTalon.h:203:12: note:   candidate expects 1 argument, 0 provided
-19:01:28 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Elevator.o" "src\\Subsystems\\ExampleSubsystem.o" "src\\Triggers\\MyTrigger.o" -lwpi 
-Info: Nothing to build for cmdRobot
-19:02:10 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Elevator.o" "src\\Subsystems\\ExampleSubsystem.o" "src\\Triggers\\MyTrigger.o" -lwpi 
-19:02:59 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-..\src\Robot.cpp: In member function 'virtual void Robot::RobotInit()':
-..\src\Robot.cpp:24:12: error: no match for call to '(CANTalon) (int)'
-   m1Motor(1);
-            ^
-In file included from C:\Users\James Kemp/wpilib/cpp/current/include/IterativeRobot.h:11:0,
-                 from C:\Users\James Kemp/wpilib/cpp/current/include/WPILib.h:61,
-                 from ..\src\Robot.cpp:1:
-..\src\Robot.cpp: In function 'int main()':
-C:\Users\James Kemp/wpilib/cpp/current/include/RobotBase.h:23:42: error: use of deleted function 'Robot::Robot()'
-     _ClassName_ *robot = new _ClassName_();                                  \
-                                          ^
-..\src\Robot.cpp:95:1: note: in expansion of macro 'START_ROBOT_CLASS'
- START_ROBOT_CLASS(Robot)
- ^
-..\src\Robot.cpp:7:7: note: 'Robot::Robot()' is implicitly deleted because the default definition would be ill-formed:
- class Robot: public IterativeRobot
-       ^
-..\src\Robot.cpp:7:7: error: no matching function for call to 'CANTalon::CANTalon()'
-..\src\Robot.cpp:7:7: note: candidates are:
-In file included from C:\Users\James Kemp/wpilib/cpp/current/include/WPILib.h:32:0,
-                 from ..\src\Robot.cpp:1:
-C:\Users\James Kemp/wpilib/cpp/current/include/CANTalon.h:204:12: note: CANTalon::CANTalon(int, int)
-   explicit CANTalon(int deviceNumber, int controlPeriodMs);
-            ^
-C:\Users\James Kemp/wpilib/cpp/current/include/CANTalon.h:204:12: note:   candidate expects 2 arguments, 0 provided
-C:\Users\James Kemp/wpilib/cpp/current/include/CANTalon.h:203:12: note: CANTalon::CANTalon(int)
-   explicit CANTalon(int deviceNumber);
-            ^
-C:\Users\James Kemp/wpilib/cpp/current/include/CANTalon.h:203:12: note:   candidate expects 1 argument, 0 provided
-19:03:45 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-..\src\Robot.cpp: In member function 'virtual void Robot::RobotInit()':
-..\src\Robot.cpp:24:12: error: no match for call to '(CANTalon) (int)'
-   m1Motor(1);
-            ^
-In file included from C:\Users\James Kemp/wpilib/cpp/current/include/IterativeRobot.h:11:0,
-                 from C:\Users\James Kemp/wpilib/cpp/current/include/WPILib.h:61,
-                 from ..\src\Robot.cpp:1:
-..\src\Robot.cpp: In function 'int main()':
-C:\Users\James Kemp/wpilib/cpp/current/include/RobotBase.h:23:42: error: use of deleted function 'Robot::Robot()'
-     _ClassName_ *robot = new _ClassName_();                                  \
-                                          ^
-..\src\Robot.cpp:95:1: note: in expansion of macro 'START_ROBOT_CLASS'
- START_ROBOT_CLASS(Robot)
- ^
-..\src\Robot.cpp:7:7: note: 'Robot::Robot()' is implicitly deleted because the default definition would be ill-formed:
- class Robot: public IterativeRobot
-       ^
-..\src\Robot.cpp:7:7: error: no matching function for call to 'CANTalon::CANTalon()'
-..\src\Robot.cpp:7:7: note: candidates are:
-In file included from C:\Users\James Kemp/wpilib/cpp/current/include/WPILib.h:32:0,
-                 from ..\src\Robot.cpp:1:
-C:\Users\James Kemp/wpilib/cpp/current/include/CANTalon.h:204:12: note: CANTalon::CANTalon(int, int)
-   explicit CANTalon(int deviceNumber, int controlPeriodMs);
-            ^
-C:\Users\James Kemp/wpilib/cpp/current/include/CANTalon.h:204:12: note:   candidate expects 2 arguments, 0 provided
-C:\Users\James Kemp/wpilib/cpp/current/include/CANTalon.h:203:12: note: CANTalon::CANTalon(int)
-   explicit CANTalon(int deviceNumber);
-            ^
-C:\Users\James Kemp/wpilib/cpp/current/include/CANTalon.h:203:12: note:   candidate expects 1 argument, 0 provided
-19:03:59 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-..\src\Robot.cpp:6:11: error: no matching function for call to 'CANTalon::CANTalon()'
-  CANTalon m1Motor;
-           ^
-..\src\Robot.cpp:6:11: note: candidates are:
-In file included from C:\Users\James Kemp/wpilib/cpp/current/include/WPILib.h:32:0,
-                 from ..\src\Robot.cpp:1:
-C:\Users\James Kemp/wpilib/cpp/current/include/CANTalon.h:204:12: note: CANTalon::CANTalon(int, int)
-   explicit CANTalon(int deviceNumber, int controlPeriodMs);
-            ^
-C:\Users\James Kemp/wpilib/cpp/current/include/CANTalon.h:204:12: note:   candidate expects 2 arguments, 0 provided
-C:\Users\James Kemp/wpilib/cpp/current/include/CANTalon.h:203:12: note: CANTalon::CANTalon(int)
-   explicit CANTalon(int deviceNumber);
-            ^
-C:\Users\James Kemp/wpilib/cpp/current/include/CANTalon.h:203:12: note:   candidate expects 1 argument, 0 provided
-..\src\Robot.cpp: In member function 'virtual void Robot::RobotInit()':
-..\src\Robot.cpp:24:12: error: no match for call to '(CANTalon) (int)'
-   m1Motor(1);
-            ^
-19:04:26 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-..\src\Robot.cpp: In member function 'virtual void Robot::RobotInit()':
-..\src\Robot.cpp:25:12: error: no match for call to '(CANTalon) (int)'
-   m1Motor(1);
-            ^
-In file included from C:\Users\James Kemp/wpilib/cpp/current/include/IterativeRobot.h:11:0,
-                 from C:\Users\James Kemp/wpilib/cpp/current/include/WPILib.h:61,
-                 from ..\src\Robot.cpp:1:
-..\src\Robot.cpp: In function 'int main()':
-C:\Users\James Kemp/wpilib/cpp/current/include/RobotBase.h:23:42: error: use of deleted function 'Robot::Robot()'
-     _ClassName_ *robot = new _ClassName_();                                  \
-                                          ^
-..\src\Robot.cpp:96:1: note: in expansion of macro 'START_ROBOT_CLASS'
- START_ROBOT_CLASS(Robot)
- ^
-..\src\Robot.cpp:7:7: note: 'Robot::Robot()' is implicitly deleted because the default definition would be ill-formed:
- class Robot: public IterativeRobot
-       ^
-..\src\Robot.cpp:7:7: error: no matching function for call to 'CANTalon::CANTalon()'
-..\src\Robot.cpp:7:7: note: candidates are:
-In file included from C:\Users\James Kemp/wpilib/cpp/current/include/WPILib.h:32:0,
-                 from ..\src\Robot.cpp:1:
-C:\Users\James Kemp/wpilib/cpp/current/include/CANTalon.h:204:12: note: CANTalon::CANTalon(int, int)
-   explicit CANTalon(int deviceNumber, int controlPeriodMs);
-            ^
-C:\Users\James Kemp/wpilib/cpp/current/include/CANTalon.h:204:12: note:   candidate expects 2 arguments, 0 provided
-C:\Users\James Kemp/wpilib/cpp/current/include/CANTalon.h:203:12: note: CANTalon::CANTalon(int)
-   explicit CANTalon(int deviceNumber);
-            ^
-C:\Users\James Kemp/wpilib/cpp/current/include/CANTalon.h:203:12: note:   candidate expects 1 argument, 0 provided
-19:10:30 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-..\src\Robot.cpp: In member function 'virtual void Robot::RobotInit()':
-..\src\Robot.cpp:18:12: error: no match for call to '(CANTalon) (int)'
-   m1Motor(1);
-            ^
-In file included from C:\Users\James Kemp/wpilib/cpp/current/include/IterativeRobot.h:11:0,
-                 from C:\Users\James Kemp/wpilib/cpp/current/include/WPILib.h:61,
-                 from ..\src\Robot.cpp:1:
-..\src\Robot.cpp: In function 'int main()':
-C:\Users\James Kemp/wpilib/cpp/current/include/RobotBase.h:23:42: error: use of deleted function 'Robot::Robot()'
-     _ClassName_ *robot = new _ClassName_();                                  \
-                                          ^
-..\src\Robot.cpp:95:1: note: in expansion of macro 'START_ROBOT_CLASS'
- START_ROBOT_CLASS(Robot)
- ^
-..\src\Robot.cpp:7:7: note: 'Robot::Robot()' is implicitly deleted because the default definition would be ill-formed:
- class Robot: public IterativeRobot
-       ^
-..\src\Robot.cpp:7:7: error: no matching function for call to 'CANTalon::CANTalon()'
-..\src\Robot.cpp:7:7: note: candidates are:
-In file included from C:\Users\James Kemp/wpilib/cpp/current/include/WPILib.h:32:0,
-                 from ..\src\Robot.cpp:1:
-C:\Users\James Kemp/wpilib/cpp/current/include/CANTalon.h:204:12: note: CANTalon::CANTalon(int, int)
-   explicit CANTalon(int deviceNumber, int controlPeriodMs);
-            ^
-C:\Users\James Kemp/wpilib/cpp/current/include/CANTalon.h:204:12: note:   candidate expects 2 arguments, 0 provided
-C:\Users\James Kemp/wpilib/cpp/current/include/CANTalon.h:203:12: note: CANTalon::CANTalon(int)
-   explicit CANTalon(int deviceNumber);
-            ^
-C:\Users\James Kemp/wpilib/cpp/current/include/CANTalon.h:203:12: note:   candidate expects 1 argument, 0 provided
-19:12:23 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-..\src\Robot.cpp: In member function 'virtual void Robot::RobotInit()':
-..\src\Robot.cpp:18:3: error: 'm1Motor' was not declared in this scope
-   m1Motor = new CANTalon(1);
-   ^
-19:12:46 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Elevator.o" "src\\Subsystems\\ExampleSubsystem.o" "src\\Triggers\\MyTrigger.o" -lwpi 
-19:21:29 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Elevator.o" "src\\Subsystems\\ExampleSubsystem.o" "src\\Triggers\\MyTrigger.o" -lwpi 
-Info: Nothing to build for cmdRobot
-19:22:29 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Elevator.o" "src\\Subsystems\\ExampleSubsystem.o" "src\\Triggers\\MyTrigger.o" -lwpi 
-Info: Nothing to build for cmdRobot
-Info: Nothing to build for cmdRobot
-19:25:19 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Elevator.o" "src\\Subsystems\\ExampleSubsystem.o" "src\\Triggers\\MyTrigger.o" -lwpi 
-Info: Nothing to build for cmdRobot
-Info: Nothing to build for cmdRobot
-19:39:48 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Elevator.o" "src\\Subsystems\\ExampleSubsystem.o" "src\\Triggers\\MyTrigger.o" -lwpi 
-Info: Nothing to build for cmdRobot
-Info: Nothing to build for cmdRobot
-19:46:19 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Elevator.o" "src\\Subsystems\\ExampleSubsystem.o" "src\\Triggers\\MyTrigger.o" -lwpi 
-Info: Nothing to build for cmdRobot
-Info: Nothing to build for cmdRobot
-19:49:16 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Elevator.o" "src\\Subsystems\\ExampleSubsystem.o" "src\\Triggers\\MyTrigger.o" -lwpi 
-Info: Nothing to build for cmdRobot
-Info: Nothing to build for cmdRobot
-19:52:33 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-..\src\Robot.cpp: In member function 'virtual void Robot::RobotInit()':
-..\src\Robot.cpp:24:9: warning: unused variable 'v' [-Wunused-variable]
-   float v = m1Motor->GetBusVoltage();
-         ^
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Elevator.o" "src\\Subsystems\\ExampleSubsystem.o" "src\\Triggers\\MyTrigger.o" -lwpi 
-19:52:45 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Elevator.o" "src\\Subsystems\\ExampleSubsystem.o" "src\\Triggers\\MyTrigger.o" -lwpi 
-Info: Nothing to build for cmdRobot
-Info: Nothing to build for cmdRobot
-20:06:26 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Elevator.o" "src\\Subsystems\\ExampleSubsystem.o" "src\\Triggers\\MyTrigger.o" -lwpi 
-Info: Nothing to build for cmdRobot
-Info: Nothing to build for cmdRobot
-20:14:08 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Elevator.o" "src\\Subsystems\\ExampleSubsystem.o" "src\\Triggers\\MyTrigger.o" -lwpi 
-Info: Nothing to build for cmdRobot
-Info: Nothing to build for cmdRobot
-20:26:22 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Elevator.o" "src\\Subsystems\\ExampleSubsystem.o" "src\\Triggers\\MyTrigger.o" -lwpi 
-Info: Nothing to build for cmdRobot
-20:26:34 **** Rebuild of configuration Debug for project PacGoat ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\DriveForward.o" "..\\src\\Commands\\DriveForward.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\OpenClaw.o" "..\\src\\Commands\\OpenClaw.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\WaitForBall.o" "..\\src\\Commands\\WaitForBall.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\SetPivotSetpoint.o" "..\\src\\Commands\\SetPivotSetpoint.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\ExtendShooter.o" "..\\src\\Commands\\ExtendShooter.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Collect.o" "..\\src\\Commands\\Collect.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\LowGoal.o" "..\\src\\Commands\\LowGoal.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\DriveTrain.o" "..\\src\\Subsystems\\DriveTrain.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Triggers\\DoubleButton.o" "..\\src\\Triggers\\DoubleButton.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\SetCollectionSpeed.o" "..\\src\\Commands\\SetCollectionSpeed.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\OI.o" "..\\src\\OI.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\CloseClaw.o" "..\\src\\Commands\\CloseClaw.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\CheckForHotGoal.o" "..\\src\\Commands\\CheckForHotGoal.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Collector.o" "..\\src\\Subsystems\\Collector.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\WaitForPressure.o" "..\\src\\Commands\\WaitForPressure.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Pivot.o" "..\\src\\Subsystems\\Pivot.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Pneumatics.o" "..\\src\\Subsystems\\Pneumatics.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\DriveWithJoystick.o" "..\\src\\Commands\\DriveWithJoystick.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\DriveAndShootAutonomous.o" "..\\src\\Commands\\DriveAndShootAutonomous.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\PacGoat\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Shoot.o" "..\\src\\Commands\\Shoot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Commands\\CheckForHotGoal.o" "src\\Commands\\CloseClaw.o" "src\\Commands\\Collect.o" "src\\Commands\\DriveAndShootAutonomous.o" "src\\Commands\\DriveForward.o" "src\\Commands\\DriveWithJoystick.o" "src\\Commands\\ExtendShooter.o" "src\\Commands\\LowGoal.o" "src\\Commands\\OpenClaw.o" "src\\Commands\\SetCollectionSpeed.o" "src\\Commands\\SetPivotSetpoint.o" "src\\Commands\\Shoot.o" "src\\Commands\\WaitForBall.o" "src\\Commands\\WaitForPressure.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Collector.o" "src\\Subsystems\\DriveTrain.o" "src\\Subsystems\\Pivot.o" "src\\Subsystems\\Pneumatics.o" "src\\Subsystems\\Shooter.o" "src\\Triggers\\DoubleButton.o" -lwpi 
-Info: Nothing to build for cmdRobot
-20:48:14 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Elevator.o" "src\\Subsystems\\ExampleSubsystem.o" "src\\Triggers\\MyTrigger.o" -lwpi 
-Info: Nothing to build for cmdRobot
-Info: Nothing to build for PacGoat
-Info: Nothing to build for cmdRobot
-20:50:53 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Elevator.o" "src\\Subsystems\\ExampleSubsystem.o" "src\\Triggers\\MyTrigger.o" -lwpi 
-Info: Nothing to build for cmdRobot
-Info: Nothing to build for PacGoat
-Info: Nothing to build for cmdRobot
-20:55:33 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Elevator.o" "src\\Subsystems\\ExampleSubsystem.o" "src\\Triggers\\MyTrigger.o" -lwpi 
-Info: Nothing to build for cmdRobot
-Info: Nothing to build for PacGoat
-Info: Nothing to build for cmdRobot
-21:06:34 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Elevator.o" "src\\Subsystems\\ExampleSubsystem.o" "src\\Triggers\\MyTrigger.o" -lwpi 
-Info: Nothing to build for cmdRobot
-Info: Nothing to build for PacGoat
-Info: Nothing to build for cmdRobot
-21:16:25 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-..\src\Robot.cpp: In member function 'virtual void Robot::TestPeriodic()':
-..\src\Robot.cpp:106:8: error: 'kUpdatePeriod' was not declared in this scope
-   Wait(kUpdatePeriod); // Wait 5ms for the next update.
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Shoot.o" "..\\src\\Commands\\Shoot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\OI.o" "..\\src\\OI.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Climber.o" "..\\src\\Subsystems\\Climber.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Drive.o" "..\\src\\Subsystems\\Drive.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\DriveWithJoysticks.o" "..\\src\\Commands\\DriveWithJoysticks.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Liftoff.o" "..\\src\\Commands\\Liftoff.cpp" 
+..\src\Commands\Liftoff.cpp: In member function 'virtual bool Liftoff::IsFinished()':
+..\src\Commands\Liftoff.cpp:39:56: error: no matching function for call to 'frc::Joystick::GetRawButton()'
+  bool buttonVal = Robot::oi->getDriver()->GetRawButton()
+                                                        ^
+..\src\Commands\Liftoff.cpp:39:56: note: candidate is:
+In file included from C:\Users\Murali/wpilib/cpp/current/include/Buttons/JoystickButton.h:11:0,
+                 from C:\Users\Murali/wpilib/cpp/current/include/WPILib.h:23,
+                 from ..\src\Commands\../Robot.h:15,
+                 from ..\src\Commands\Liftoff.h:17,
+                 from ..\src\Commands\Liftoff.cpp:12:
+C:\Users\Murali/wpilib/cpp/current/include/GenericHID.h:54:8: note: bool frc::GenericHID::GetRawButton(int) const
+   bool GetRawButton(int button) const;
         ^
-21:16:34 **** Incremental Build of configuration Debug for project cmdRobot ****
+C:\Users\Murali/wpilib/cpp/current/include/GenericHID.h:54:8: note:   candidate expects 1 argument, 0 provided
+..\src\Commands\Liftoff.cpp:39:7: warning: unused variable 'buttonVal' [-Wunused-variable]
+  bool buttonVal = Robot::oi->getDriver()->GetRawButton()
+       ^
+..\src\Commands\Liftoff.cpp:41:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+12:19:42 **** Incremental Build of configuration Debug for project BB1 ****
 Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Elevator.o" "src\\Subsystems\\ExampleSubsystem.o" "src\\Triggers\\MyTrigger.o" -lwpi 
-Info: Nothing to build for cmdRobot
-Info: Nothing to build for Motor Controller
-Info: Nothing to build for PacGoat
-Info: Nothing to build for cmdRobot
-21:25:22 **** Incremental Build of configuration Debug for project cmdRobot ****
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Intake.o" "..\\src\\Subsystems\\Intake.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\AutonomousCommand.o" "..\\src\\Commands\\AutonomousCommand.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\FloorLoad.o" "..\\src\\Commands\\FloorLoad.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Liftoff.o" "..\\src\\Commands\\Liftoff.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+12:20:01 **** Incremental Build of configuration Debug for project BB1 ****
 Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Elevator.o" "src\\Subsystems\\ExampleSubsystem.o" "src\\Triggers\\MyTrigger.o" -lwpi 
-Info: Nothing to build for cmdRobot
-Info: Nothing to build for Motor Controller
-Info: Nothing to build for PacGoat
-Info: Nothing to build for cmdRobot
-17:55:08 **** Incremental Build of configuration Debug for project cmdRobot ****
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Liftoff.o" "..\\src\\Commands\\Liftoff.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+12:23:41 **** Incremental Build of configuration Debug for project BB1 ****
 Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Elevator.o" "src\\Subsystems\\ExampleSubsystem.o" "src\\Triggers\\MyTrigger.o" -lwpi 
-Info: Nothing to build for cmdRobot
-Info: Nothing to build for Motor Controller
-Info: Nothing to build for PacGoat
-Info: Nothing to build for cmdRobot
-17:57:50 **** Incremental Build of configuration Debug for project cmdRobot ****
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Shoot.o" "..\\src\\Commands\\Shoot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+12:23:46 **** Incremental Build of configuration Debug for project BB1 ****
 Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Elevator.o" "src\\Subsystems\\ExampleSubsystem.o" "src\\Triggers\\MyTrigger.o" -lwpi 
-Info: Nothing to build for cmdRobot
-Info: Nothing to build for Motor Controller
-Info: Nothing to build for PacGoat
-Info: Nothing to build for cmdRobot
-18:05:08 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Elevator.o" "src\\Subsystems\\ExampleSubsystem.o" "src\\Triggers\\MyTrigger.o" -lwpi 
-Info: Nothing to build for cmdRobot
-Info: Nothing to build for Motor Controller
-Info: Nothing to build for PacGoat
-Info: Nothing to build for cmdRobot
-19:53:09 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-..\src\Robot.cpp:15:2: error: 'PigeonImu' does not name a type
-  PigeonImu *imu;
-  ^
-..\src\Robot.cpp: In member function 'virtual void Robot::RobotInit()':
-..\src\Robot.cpp:23:3: error: 'imu' was not declared in this scope
-   imu = new PigeonImu(0);
-   ^
-..\src\Robot.cpp:23:13: error: expected type-specifier before 'PigeonImu'
-   imu = new PigeonImu(0);
-             ^
-20:03:47 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PigeonImu.o" "..\\src\\PigeonImu.cpp" 
-..\src\PigeonImu.cpp:29:21: fatal error: HAL/HAL.h: No such file or directory
- #include "HAL/HAL.h"
-                     ^
-compilation terminated.
-20:05:19 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PigeonImu.o" "..\\src\\PigeonImu.cpp" 
-..\src\PigeonImu.cpp:29:21: fatal error: HAL/HAL.h: No such file or directory
- #include "HAL/HAL.h"
-                     ^
-compilation terminated.
-20:05:57 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PigeonImu.o" "..\\src\\PigeonImu.cpp" 
-..\src\PigeonImu.cpp:29:17: fatal error: HAL.h: No such file or directory
- #include "HAL.h"
-                 ^
-compilation terminated.
-20:16:04 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-..\src\Robot.cpp:16:2: error: 'PigeonImu' does not name a type
-  PigeonImu *imu;
-  ^
-..\src\Robot.cpp: In member function 'virtual void Robot::RobotInit()':
-..\src\Robot.cpp:24:3: error: 'imu' was not declared in this scope
-   imu = new PigeonImu(0);
-   ^
-..\src\Robot.cpp:24:13: error: expected type-specifier before 'PigeonImu'
-   imu = new PigeonImu(0);
-             ^
-20:20:39 **** Incremental Build of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-..\src\Robot.cpp:16:2: error: 'PigeonImu' does not name a type
-  PigeonImu *imu;
-  ^
-..\src\Robot.cpp: In member function 'virtual void Robot::RobotInit()':
-..\src\Robot.cpp:24:3: error: 'imu' was not declared in this scope
-   imu = new PigeonImu(0);
-   ^
-..\src\Robot.cpp:24:13: error: expected type-specifier before 'PigeonImu'
-   imu = new PigeonImu(0);
-             ^
-12:20:44 **** Rebuild of configuration Debug for project cmdRobot ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Elevator.o" "..\\src\\Subsystems\\Elevator.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\ExampleSubsystem.o" "..\\src\\Subsystems\\ExampleSubsystem.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\CommandBase.o" "..\\src\\CommandBase.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\ExampleCommand.o" "..\\src\\Commands\\ExampleCommand.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-..\src\Robot.cpp:6:23: fatal error: PigeonImu.h: No such file or directory
- #include "PigeonImu.h"
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Shoot.o" "..\\src\\Commands\\Shoot.cpp" 
+..\src\Commands\Shoot.cpp: In member function 'virtual bool Shoot::IsFinished()':
+..\src\Commands\Shoot.cpp:39:23: error: 's' was not declared in this scope
+     return !buttonVal;s
                        ^
-compilation terminated.
-12:20:59 **** Incremental Build of configuration Debug for project cmdRobot ****
+12:24:33 **** Incremental Build of configuration Debug for project BB1 ****
 Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Elevator.o" "src\\Subsystems\\ExampleSubsystem.o" "src\\Triggers\\MyTrigger.o" -lwpi 
-Info: Nothing to build for cmdRobot
-Info: Nothing to build for cmdRobot
-Info: Nothing to build for cmdRobot
-15:19:52 **** Incremental Build of configuration Debug for project cmdRobot ****
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Shoot.o" "..\\src\\Commands\\Shoot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+12:24:42 **** Incremental Build of configuration Debug for project BB1 ****
 Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Elevator.o" "src\\Subsystems\\ExampleSubsystem.o" "src\\Triggers\\MyTrigger.o" -lwpi 
-Info: Nothing to build for cmdRobot
-Info: Nothing to build for cmdRobot
-15:20:52 **** Incremental Build of configuration Debug for project cmdRobot ****
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+12:27:27 **** Incremental Build of configuration Debug for project BB1 ****
 Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Elevator.o" "src\\Subsystems\\ExampleSubsystem.o" "src\\Triggers\\MyTrigger.o" -lwpi 
-Info: Nothing to build for cmdRobot
-Info: Nothing to build for cmdRobot
-16:01:30 **** Incremental Build of configuration Debug for project cmdRobot ****
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Shoot.o" "..\\src\\Commands\\Shoot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+12:27:35 **** Incremental Build of configuration Debug for project BB1 ****
 Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IC:\\workspace\\cmdRobot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\Elevator.o" "src\\Subsystems\\ExampleSubsystem.o" "src\\Triggers\\MyTrigger.o" -lwpi 
-12:22:44 **** Rebuild of configuration Debug for project BB_Robot_Proto1 ****
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+12:29:02 **** Incremental Build of configuration Debug for project BB1 ****
 Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IZ:\\Documents\\Sync\\FIRST\\2017FRC\\Software\\workspace\\BB_Robot_Proto1\\src" "-IC:\\Users\\James Kemp/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\ExampleCommand.o" "..\\src\\Commands\\ExampleCommand.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IZ:\\Documents\\Sync\\FIRST\\2017FRC\\Software\\workspace\\BB_Robot_Proto1\\src" "-IC:\\Users\\James Kemp/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\ExampleSubsystem.o" "..\\src\\Subsystems\\ExampleSubsystem.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IZ:\\Documents\\Sync\\FIRST\\2017FRC\\Software\\workspace\\BB_Robot_Proto1\\src" "-IC:\\Users\\James Kemp/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IZ:\\Documents\\Sync\\FIRST\\2017FRC\\Software\\workspace\\BB_Robot_Proto1\\src" "-IC:\\Users\\James Kemp/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\OI.o" "..\\src\\OI.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\James Kemp/wpilib/cpp/current/include" "-IZ:\\Documents\\Sync\\FIRST\\2017FRC\\Software\\workspace\\BB_Robot_Proto1\\src" "-IC:\\Users\\James Kemp/wpilib/user/cpp/include" -O0 -Og -g3 -Wall -c -fmessage-length=0 -o "src\\CommandBase.o" "..\\src\\CommandBase.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\James Kemp/wpilib/cpp/current/lib" "-LC:\\Users\\James Kemp/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\CommandBase.o" "src\\Commands\\ExampleCommand.o" "src\\OI.o" "src\\Robot.o" "src\\Subsystems\\ExampleSubsystem.o" -lTalonSRXLib -lwpi 
-Info: Nothing to build for BB_Robot_Proto1
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Shoot.o" "..\\src\\Commands\\Shoot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+12:29:15 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+12:34:24 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+12:34:39 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+12:46:34 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+12:46:49 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+12:57:18 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+Info: Nothing to build for BB1
+Info: Nothing to build for BB1
+13:02:17 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+13:10:28 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+..\src\Subsystems\Shooter.cpp: In member function 'void Shooter::Spin()':
+..\src\Subsystems\Shooter.cpp:60:37: error: 'print' was not declared in this scope
+  print("outvoltage is %d",outvoltage);
+                                     ^
+13:10:48 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+..\src\Subsystems\Shooter.cpp: In member function 'void Shooter::Spin()':
+..\src\Subsystems\Shooter.cpp:59:38: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+  printf("outvoltage is %d",outvoltage);
+                                      ^
+..\src\Subsystems\Shooter.cpp:60:38: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+  printf("busvoltage is %d",busvoltage);
+                                      ^
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+13:11:25 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+13:11:41 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+13:14:41 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+13:14:59 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+13:39:58 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+13:40:29 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+13:42:23 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+13:42:54 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+13:44:36 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+13:45:02 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+13:46:22 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+13:46:34 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+13:50:13 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+13:50:26 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+13:52:48 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+13:53:06 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+14:00:27 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+14:00:48 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+14:09:13 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+14:09:20 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+14:12:34 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+14:13:03 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+14:14:17 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+14:14:45 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+14:14:58 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+Info: Nothing to build for BB1
+14:15:26 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+14:17:41 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+14:18:05 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+14:19:28 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+14:20:51 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+14:41:57 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\AutonomousCommand.o" "..\\src\\Commands\\AutonomousCommand.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\DriveWithJoysticks.o" "..\\src\\Commands\\DriveWithJoysticks.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Shoot.o" "..\\src\\Commands\\Shoot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\RobotMap.o" "..\\src\\RobotMap.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Climber.o" "..\\src\\Subsystems\\Climber.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Intake.o" "..\\src\\Subsystems\\Intake.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\FloorLoad.o" "..\\src\\Commands\\FloorLoad.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Liftoff.o" "..\\src\\Commands\\Liftoff.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\OI.o" "..\\src\\OI.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Drive.o" "..\\src\\Subsystems\\Drive.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+14:47:11 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+..\src\Subsystems\Shooter.cpp:71:38: error: no 'void Shooter::SetHood(double)' member function declared in class 'Shooter'
+ void Shooter::SetHood(double position){
+                                      ^
+14:48:32 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Drive.o" "..\\src\\Subsystems\\Drive.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\OI.o" "..\\src\\OI.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Liftoff.o" "..\\src\\Commands\\Liftoff.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Shoot.o" "..\\src\\Commands\\Shoot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+..\src\Subsystems\Shooter.cpp:71:6: error: prototype for 'void Shooter::SetHoodPosition(double)' does not match any in class 'Shooter'
+ void Shooter::SetHoodPosition(double position){
+      ^
+In file included from ..\src\Subsystems\Shooter.cpp:14:0:
+..\src\Subsystems\Shooter.h:37:7: error: candidate is: void Shooter::SetHoodPosition()
+  void SetHoodPosition();
+       ^
+14:49:16 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\FloorLoad.o" "..\\src\\Commands\\FloorLoad.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\AutonomousCommand.o" "..\\src\\Commands\\AutonomousCommand.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+..\src\Subsystems\Shooter.cpp:71:6: error: prototype for 'void Shooter::SetHoodPosition(double)' does not match any in class 'Shooter'
+ void Shooter::SetHoodPosition(double position){
+      ^
+In file included from ..\src\Subsystems\Shooter.cpp:14:0:
+..\src\Subsystems\Shooter.h:37:7: error: candidate is: void Shooter::SetHoodPosition()
+  void SetHoodPosition();
+       ^
+14:50:17 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+..\src\Subsystems\Shooter.cpp:71:6: error: prototype for 'void Shooter::SetHoodPosition(double)' does not match any in class 'Shooter'
+ void Shooter::SetHoodPosition(double position){
+      ^
+In file included from ..\src\Subsystems\Shooter.cpp:14:0:
+..\src\Subsystems\Shooter.h:37:7: error: candidate is: void Shooter::SetHoodPosition()
+  void SetHoodPosition();
+       ^
+14:52:35 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Liftoff.o" "..\\src\\Commands\\Liftoff.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\AutonomousCommand.o" "..\\src\\Commands\\AutonomousCommand.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\OI.o" "..\\src\\OI.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\FloorLoad.o" "..\\src\\Commands\\FloorLoad.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Shoot.o" "..\\src\\Commands\\Shoot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Drive.o" "..\\src\\Subsystems\\Drive.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+..\src\Subsystems\Shooter.cpp:71:6: error: prototype for 'void Shooter::SetHoodPos(double)' does not match any in class 'Shooter'
+ void Shooter::SetHoodPos(double position){
+      ^
+In file included from ..\src\Subsystems\Shooter.cpp:14:0:
+..\src\Subsystems\Shooter.h:37:7: error: candidate is: void Shooter::SetHoodPos()
+  void SetHoodPos();
+       ^
+14:56:54 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\FloorLoad.o" "..\\src\\Commands\\FloorLoad.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Liftoff.o" "..\\src\\Commands\\Liftoff.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Drive.o" "..\\src\\Subsystems\\Drive.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Shoot.o" "..\\src\\Commands\\Shoot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\DriveWithJoysticks.o" "..\\src\\Commands\\DriveWithJoysticks.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\AutonomousCommand.o" "..\\src\\Commands\\AutonomousCommand.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\OI.o" "..\\src\\OI.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+18:15:53 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\OI.o" "..\\src\\OI.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\AutonomousCommand.o" "..\\src\\Commands\\AutonomousCommand.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\FloorLoad.o" "..\\src\\Commands\\FloorLoad.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Shoot.o" "..\\src\\Commands\\Shoot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\RobotMap.o" "..\\src\\RobotMap.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Climber.o" "..\\src\\Subsystems\\Climber.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Intake.o" "..\\src\\Subsystems\\Intake.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\AngleShooter.o" "..\\src\\Commands\\AngleShooter.cpp" 
+..\src\Commands\AngleShooter.cpp: In member function 'virtual void AngleShooter::Execute()':
+..\src\Commands\AngleShooter.cpp:32:1: error: expected unqualified-id before '}' token
+ }
+ ^
+18:17:05 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Drive.o" "..\\src\\Subsystems\\Drive.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Liftoff.o" "..\\src\\Commands\\Liftoff.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\DriveWithJoysticks.o" "..\\src\\Commands\\DriveWithJoysticks.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\AngleShooter.o" "..\\src\\Commands\\AngleShooter.cpp" 
+..\src\Commands\AngleShooter.cpp: In member function 'virtual void AngleShooter::Execute()':
+..\src\Commands\AngleShooter.cpp:32:1: error: expected unqualified-id before '}' token
+ }
+ ^
+18:17:54 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\AngleShooter.o" "..\\src\\Commands\\AngleShooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AngleShooter.o" "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+18:18:06 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\AngleShooter.o" "..\\src\\Commands\\AngleShooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AngleShooter.o" "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+18:24:15 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\AngleShooter.o" "..\\src\\Commands\\AngleShooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AngleShooter.o" "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+18:27:31 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\AngleShooter.o" "..\\src\\Commands\\AngleShooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AngleShooter.o" "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+18:27:57 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AngleShooter.o" "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+Info: Nothing to build for BB1
+18:30:42 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\AngleShooter.o" "..\\src\\Commands\\AngleShooter.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Shoot.o" "..\\src\\Commands\\Shoot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\OI.o" "..\\src\\OI.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\DriveWithJoysticks.o" "..\\src\\Commands\\DriveWithJoysticks.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\AutonomousCommand.o" "..\\src\\Commands\\AutonomousCommand.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Drive.o" "..\\src\\Subsystems\\Drive.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\RobotMap.o" "..\\src\\RobotMap.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Intake.o" "..\\src\\Subsystems\\Intake.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Liftoff.o" "..\\src\\Commands\\Liftoff.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\FloorLoad.o" "..\\src\\Commands\\FloorLoad.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Climber.o" "..\\src\\Subsystems\\Climber.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AngleShooter.o" "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+18:31:51 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\RobotMap.o" "..\\src\\RobotMap.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AngleShooter.o" "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+18:33:08 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\FloorLoad.o" "..\\src\\Commands\\FloorLoad.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\OI.o" "..\\src\\OI.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\AutonomousCommand.o" "..\\src\\Commands\\AutonomousCommand.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Climber.o" "..\\src\\Subsystems\\Climber.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\DriveWithJoysticks.o" "..\\src\\Commands\\DriveWithJoysticks.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Liftoff.o" "..\\src\\Commands\\Liftoff.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Drive.o" "..\\src\\Subsystems\\Drive.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\RobotMap.o" "..\\src\\RobotMap.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Shoot.o" "..\\src\\Commands\\Shoot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Intake.o" "..\\src\\Subsystems\\Intake.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\AngleShooter.o" "..\\src\\Commands\\AngleShooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AngleShooter.o" "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+18:36:34 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\RobotMap.o" "..\\src\\RobotMap.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AngleShooter.o" "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+18:38:17 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Intake.o" "..\\src\\Subsystems\\Intake.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\AutonomousCommand.o" "..\\src\\Commands\\AutonomousCommand.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\RobotMap.o" "..\\src\\RobotMap.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Drive.o" "..\\src\\Subsystems\\Drive.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\AngleShooter.o" "..\\src\\Commands\\AngleShooter.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Liftoff.o" "..\\src\\Commands\\Liftoff.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\FloorLoad.o" "..\\src\\Commands\\FloorLoad.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\OI.o" "..\\src\\OI.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Climber.o" "..\\src\\Subsystems\\Climber.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Shoot.o" "..\\src\\Commands\\Shoot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\DriveWithJoysticks.o" "..\\src\\Commands\\DriveWithJoysticks.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AngleShooter.o" "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+18:41:00 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+In file included from ..\src\Robot.h:17:0,
+                 from ..\src\Robot.cpp:16:
+..\src\RobotMap.h:34:25: error: 'CANTalon' was not declared in this scope
+  static std::shared_ptr<CANTalon> shooterShooterMotor;
+                         ^
+..\src\RobotMap.h:34:33: error: template argument 1 is invalid
+  static std::shared_ptr<CANTalon> shooterShooterMotor;
+                                 ^
+18:41:58 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Liftoff.o" "..\\src\\Commands\\Liftoff.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Intake.o" "..\\src\\Subsystems\\Intake.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\DriveWithJoysticks.o" "..\\src\\Commands\\DriveWithJoysticks.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\OI.o" "..\\src\\OI.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\AutonomousCommand.o" "..\\src\\Commands\\AutonomousCommand.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\FloorLoad.o" "..\\src\\Commands\\FloorLoad.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Shoot.o" "..\\src\\Commands\\Shoot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Climber.o" "..\\src\\Subsystems\\Climber.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\AngleShooter.o" "..\\src\\Commands\\AngleShooter.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\RobotMap.o" "..\\src\\RobotMap.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Drive.o" "..\\src\\Subsystems\\Drive.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AngleShooter.o" "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+18:43:30 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AngleShooter.o" "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+18:46:30 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AngleShooter.o" "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+18:51:42 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\FloorLoad.o" "..\\src\\Commands\\FloorLoad.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\OI.o" "..\\src\\OI.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\AutonomousCommand.o" "..\\src\\Commands\\AutonomousCommand.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Climber.o" "..\\src\\Subsystems\\Climber.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Drive.o" "..\\src\\Subsystems\\Drive.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Intake.o" "..\\src\\Subsystems\\Intake.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Liftoff.o" "..\\src\\Commands\\Liftoff.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\AngleShooter.o" "..\\src\\Commands\\AngleShooter.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\DriveWithJoysticks.o" "..\\src\\Commands\\DriveWithJoysticks.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\RobotMap.o" "..\\src\\RobotMap.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Shoot.o" "..\\src\\Commands\\Shoot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AngleShooter.o" "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+19:04:05 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\AutonomousCommand.o" "..\\src\\Commands\\AutonomousCommand.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\FloorLoad.o" "..\\src\\Commands\\FloorLoad.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Shoot.o" "..\\src\\Commands\\Shoot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\RobotMap.o" "..\\src\\RobotMap.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Drive.o" "..\\src\\Subsystems\\Drive.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Climber.o" "..\\src\\Subsystems\\Climber.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\DriveWithJoysticks.o" "..\\src\\Commands\\DriveWithJoysticks.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Liftoff.o" "..\\src\\Commands\\Liftoff.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\OI.o" "..\\src\\OI.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Intake.o" "..\\src\\Subsystems\\Intake.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+19:06:07 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+19:07:49 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Shoot.o" "..\\src\\Commands\\Shoot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+19:08:01 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+19:09:09 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Shoot.o" "..\\src\\Commands\\Shoot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+19:10:26 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+19:10:33 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Shoot.o" "..\\src\\Commands\\Shoot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+19:11:49 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\Shoot.o" "..\\src\\Commands\\Shoot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+19:33:48 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+19:45:06 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+19:48:50 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+19:54:16 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+19:56:57 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+19:58:55 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+20:01:13 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+20:02:28 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+20:03:13 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+20:07:26 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+20:07:34 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+20:11:15 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+20:11:20 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+20:12:26 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+20:12:32 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+20:13:21 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+Info: Nothing to build for BB1
+20:14:13 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+20:14:31 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1
+20:22:02 **** Incremental Build of configuration Debug for project BB1 ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Murali/wpilib/cpp/current/include" "-IC:\\workspace/BB1/src" "-IC:\\Users\\Murali/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Shooter.o" "..\\src\\Subsystems\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Murali/wpilib/cpp/current/lib" "-LC:\\Users\\Murali/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\Commands\\DriveWithJoysticks.o" "src\\Commands\\FloorLoad.o" "src\\Commands\\Liftoff.o" "src\\Commands\\Shoot.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\Climber.o" "src\\Subsystems\\Drive.o" "src\\Subsystems\\Intake.o" "src\\Subsystems\\Shooter.o" -lCTRLib -lwpi 
+Info: Nothing to build for BB1

@@ -47,25 +47,27 @@ void Shooter::Spin(){
 
 	// // can talon intiatize and set the number of pulses per revolution , set PID , rpm
 	shooterMotor->SetFeedbackDevice(CANTalon::CtreMagEncoder_Relative);
-	shooterMotor->SetSensorDirection(false);
+	shooterMotor->SetSensorDirection(-1);
 	shooterMotor->ConfigEncoderCodesPerRev(4096);
 	shooterMotor->SetAllowableClosedLoopErr(0);
 	shooterMotor->SelectProfileSlot(0);
 
+	/*
 	shooterMotor->SetF(0.0);
-	shooterMotor->SetP(0.5);
-	shooterMotor->SetI(0.0);
+	shooterMotor->SetP(0.3);
+	shooterMotor->SetI(0.0001);
 	shooterMotor->SetD(0.0);
+	*/
 
     shooterMotor->SetControlMode(frc::CANSpeedController::kSpeed);
-	shooterMotor->Set(120);
+	shooterMotor->Set(360.0);
 
 
 	printf("Spinning\n");
 }
 
 void Shooter::Stop(){
-	shooterMotor->Set(0);
+	shooterMotor->Set(0.0);
 
 	printf("STOP shooter\n");
 }

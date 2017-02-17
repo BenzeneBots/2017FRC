@@ -1,3 +1,4 @@
+activeuserprofiles=Lenovo-PC;Team
 eclipse.preferences.version=1
-org.eclipse.rse.systemtype.local.systemType.defaultUserId=James Kemp
-useridperkey=WIN-1HBA4OV7F0M.Local\=James Kemp;
+org.eclipse.rse.systemtype.local.systemType.defaultUserId=Murali
+useridperkey=Lenovo-PC.Local\=Murali;Lenovo-PC.roboRIO-4384-FRC.local\=lvuser;

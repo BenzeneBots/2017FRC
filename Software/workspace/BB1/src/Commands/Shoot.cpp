@@ -32,6 +32,7 @@ void Shoot::Initialize() {
 void Shoot::Execute() {
 
 		Robot::shooter->Spin();
+		Robot::shooter->SetHoodPosition(.5);
 	printf("shooter execute\n");
 }
 
@@ -47,6 +48,7 @@ bool Shoot::IsFinished() {
 // Called once after isFinished returns true
 void Shoot::End() {
 	Robot::shooter->Stop();
+	Robot::shooter->SetHoodPosition(0.2);
 }
 
 // Called when another command which requires one or more of the same
