@@ -31,7 +31,9 @@ void Shoot::Initialize() {
 // Called repeatedly when this Command is scheduled to run
 void Shoot::Execute() {
 
-		Robot::shooter->Spin();
+		Robot::shooter->Spin(120);
+		//Get Pi values
+		//Use lookup table
 		Robot::shooter->SetHoodPosition(.5);
 	printf("shooter execute\n");
 }

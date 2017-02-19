@@ -37,7 +37,6 @@ void FloorLoad::Execute() {
 
 // Make this return true when this Command no longer needs to run execute()
 bool FloorLoad::IsFinished() {
-
 	printf("IsFinished called\n");
 	bool buttonVal= Robot::oi->getManipulator()->GetRawButton(5);
 	return !buttonVal;
