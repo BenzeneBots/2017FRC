@@ -1,53 +1,39 @@
 //
-//  lookup.c
+//  Lookup.c
 //
 
-#include <stdio.h>   // library for printing
+#include "Lookup.h"
 
-#define size 8       // look up table size
+// function to linear interpolate to find RPM and angle from distance look up table
 
-typedef struct {int rpm; int range;} coords; // look up table data structure
-
-coords lut[size] =   // define look up table
+results interp(int myrange)
 {
-//   RPM   RANGE (in centimeters)
-    {100,  500},
-    {200,  600},
-    {300,  700},
-    {400,  800},
-    {500,  900},
-    {600,  1000},
-    {700,  4000},
-    {800,  5000}
-};
-
-// function to linear interpolate to find RPM from a estimated range look up table
-
-int interp(coords* c, int myrange)
-{
-    int i;
+    // setup variables
+    
+    int i, j, k;
+    
+    results final;
+    final.speed = 0;
+    final.theta = 0;
     
     for( i = 0; i < size-1; i++ )  // loop through table
     {
-      if ( c[i].range <= myrange && c[i+1].range >= myrange ) // find out if in range of table
+      if ( lut[i].distance <= myrange && lut[i+1].distance >= myrange ) // find out if in range of table
       {
-          double diffrange = myrange - c[i].range;  // compare to lower end of range
-          double diffn = c[i+1].range - c[i].range; // calculate the delta of range
-            
-          return c[i].rpm + ( c[i+1].rpm - c[i].rpm ) * diffrange / diffn; // math for linear interpolation
+          double diffrange = myrange - lut[i].distance;  // compare to lower end of range
+          double diffn = lut[i+1].distance - lut[i].distance; // calculate the delta of range
+          
+          // linear interpolate
+          j = lut[i].speed + (lut[i+1].speed - lut[i].speed) * diffrange / diffn;
+          k = lut[i].theta + (lut[i+1].theta - lut[i].theta) * diffrange / diffn;
+          
+          // fill results and return 
+          final.speed = j;
+          final.theta = k;
+          
+          return final;
       }
     }
-    return 0;  // not in range of table
+    return final;  // not in range of table
 }
-
-// Usage example
-int mymain() {
-    
-    int myrpm;
-    
-    myrpm = interp(lut, 875); // send value of range and get RPM back
-    
-    printf("%d is the RPM value", myrpm); // show RPM value
-    
-    return 0;
-}
+                   
