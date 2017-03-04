@@ -1,5 +1,6 @@
 //
-//  Lookup.c
+//  Lookup.cpp
+
 //
 
 #include "Lookup.h"
@@ -14,7 +15,7 @@ results interp(int myrange)
     
     results final;
     final.speed = 0;
-    final.theta = 0;
+    final.position = 0;
     
     for( i = 0; i < size-1; i++ )  // loop through table
     {
@@ -25,11 +26,11 @@ results interp(int myrange)
           
           // linear interpolate
           j = lut[i].speed + (lut[i+1].speed - lut[i].speed) * diffrange / diffn;
-          k = lut[i].theta + (lut[i+1].theta - lut[i].theta) * diffrange / diffn;
+          k = lut[i].position + (lut[i+1].position - lut[i].position) * diffrange / diffn;
           
           // fill results and return 
           final.speed = j;
-          final.theta = k;
+          final.position = k;
           
           return final;
       }

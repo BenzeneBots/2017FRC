@@ -37,9 +37,12 @@ void ShiftGears::Execute() {
 	}
 	else if (m_gear == 1){
 		Robot::shifter->ShiftDown();
+		printf("Shifted to low gear\n");
 	}
 	else if (m_gear == 2){
 		Robot::shifter->ShiftUp();
+		printf("shifted to high gear\n");
+
 	}
 
 }

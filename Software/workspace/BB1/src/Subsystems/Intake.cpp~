@@ -40,9 +40,14 @@ void Intake::InitDefaultCommand() {
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
 
-void Intake::Spin(){
-	intakeMotor->Set(.2);
-	printf("Spinning Intake\n");
+void Intake::SpinForward(){
+	intakeMotor->Set(1.0);
+	printf("Spinning Intake Forward\n");
+}
+
+void Intake::SpinReverse(){
+	intakeMotor->Set(-1.0);
+	printf("Spinning Intake Reverse\n");
 }
 
 void Intake::Stop(){

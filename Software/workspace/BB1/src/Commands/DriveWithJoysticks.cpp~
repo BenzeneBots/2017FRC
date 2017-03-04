@@ -34,9 +34,12 @@ void DriveWithJoysticks::Initialize() {
 // Called repeatedly when this Command is scheduled to run
 void DriveWithJoysticks::Execute() {
 	Robot::drive->ArcadeDriveJoystick(Robot::oi->getDriver()->GetRawAxis(1),
-			Robot::oi->getDriver()->GetRawAxis(4),
-			Robot::oi->getDriver()->GetRawAxis(3) - Robot::oi->getDriver()->GetRawAxis(2));
+			Robot::oi->getDriver()->GetRawAxis(4));
 	//Murali: Gets joystick values and passes them to the DriveWithJoysticks submethod
+
+	//Prints encoder vals to dash
+	double encoderVal = Robot::drive->GetLeftEncoderValue();
+	printf("Left Encoder Value: %f \n", encoderVal);
 
 }
 
