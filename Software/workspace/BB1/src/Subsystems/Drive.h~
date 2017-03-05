@@ -35,6 +35,7 @@ public:
 	Drive();
 	void InitDefaultCommand();
 	void ArcadeDriveJoystick(double, double);
+	void TankDrive(double, double);
 	void stop();
 	double GetLeftEncoderValue();
 	double GetRightEncoderValue();

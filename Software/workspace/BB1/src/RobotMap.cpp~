@@ -49,9 +49,10 @@ void RobotMap::init() {
         driveDrivetrain->SetSensitivity(0.5);
         driveDrivetrain->SetMaxOutput(1.0);
         driveDrivetrain->SetInvertedMotor(RobotDrive::kRearLeftMotor, true);
+        driveDrivetrain->SetInvertedMotor(RobotDrive::kRearRightMotor, true);
     driveLeftDriveEncoder.reset(new Encoder(0, 1, false, Encoder::k4X));
     lw->AddSensor("Drive", "Left Drive Encoder", driveLeftDriveEncoder);
-    driveLeftDriveEncoder->SetDistancePerPulse(12.0);
+    driveLeftDriveEncoder->SetDistancePerPulse(0.0491);
     driveLeftDriveEncoder->SetPIDSourceType(PIDSourceType::kDisplacement);
     driveRightDriveEncoder.reset(new Encoder(2, 3, false, Encoder::k4X));
     lw->AddSensor("Drive", "Right Drive Encoder", driveRightDriveEncoder);

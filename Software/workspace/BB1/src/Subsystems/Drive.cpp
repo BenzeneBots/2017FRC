@@ -51,6 +51,9 @@ void Drive::ArcadeDriveJoystick(double speed, double rotation){
 	drivetrain->ArcadeDrive(speed, 0.5 * rotation, false);	//Murali: Sets drive to the speed and rotation values
 }
 
+void Drive::TankDrive(double left, double right){
+	drivetrain->TankDrive(left, right, false);
+}
 
 void Drive::stop(){
 	drivetrain->ArcadeDrive(0.0, 0.0);

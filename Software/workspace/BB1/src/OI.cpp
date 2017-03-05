@@ -15,7 +15,10 @@
 #include "SmartDashboard/SmartDashboard.h"
 #include "Commands/AgitateBalls.h"
 #include "Commands/AutonomousCommand.h"
+#include "Commands/AutonomousCrossLine.h"
 #include "Commands/AutonomousDriveStraight.h"
+#include "Commands/AutonomousTurnLeft.h"
+#include "Commands/AutonomousTurnRight.h"
 #include "Commands/DeliverGear.h"
 #include "Commands/DriveWithJoysticks.h"
 #include "Commands/FloorLoad.h"
@@ -47,6 +50,7 @@ OI::OI() {
     drvA->WhenPressed(new Liftoff());
 
     // SmartDashboard Buttons
+    SmartDashboard::PutData("Autonomous Cross Line", new AutonomousCrossLine());
     SmartDashboard::PutData("AgitateBalls", new AgitateBalls());
     SmartDashboard::PutData("Shoot", new Shoot());
     SmartDashboard::PutData("Liftoff", new Liftoff());
