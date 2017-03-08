@@ -23,6 +23,7 @@ std::shared_ptr<RobotDrive> RobotMap::driveDrivetrain;
 std::shared_ptr<Encoder> RobotMap::driveLeftDriveEncoder;
 std::shared_ptr<Encoder> RobotMap::driveRightDriveEncoder;
 std::shared_ptr<SpeedController> RobotMap::intakeIntakeMotor;
+std::shared_ptr<PowerDistributionPanel> RobotMap::intakePowerDistributionPanel1;
 std::shared_ptr<SpeedController> RobotMap::movingFloorFloorMotor;
 std::shared_ptr<SpeedController> RobotMap::climberClimberMotor;
 std::shared_ptr<DoubleSolenoid> RobotMap::shifterDriveShifter;
@@ -56,10 +57,13 @@ void RobotMap::init() {
     driveLeftDriveEncoder->SetPIDSourceType(PIDSourceType::kDisplacement);
     driveRightDriveEncoder.reset(new Encoder(2, 3, false, Encoder::k4X));
     lw->AddSensor("Drive", "Right Drive Encoder", driveRightDriveEncoder);
-    driveRightDriveEncoder->SetDistancePerPulse(12.0);
+    driveRightDriveEncoder->SetDistancePerPulse(0.0491);
     driveRightDriveEncoder->SetPIDSourceType(PIDSourceType::kDisplacement);
     intakeIntakeMotor.reset(new VictorSP(2));
     lw->AddActuator("Intake", "IntakeMotor", std::static_pointer_cast<VictorSP>(intakeIntakeMotor));
+    
+    intakePowerDistributionPanel1.reset(new PowerDistributionPanel(0));
+    lw->AddSensor("Intake", "PowerDistributionPanel 1", intakePowerDistributionPanel1);
     
     movingFloorFloorMotor.reset(new VictorSP(3));
     lw->AddActuator("Moving Floor", "FloorMotor", std::static_pointer_cast<VictorSP>(movingFloorFloorMotor));

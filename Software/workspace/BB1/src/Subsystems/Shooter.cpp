@@ -46,7 +46,7 @@ Shooter::Shooter() : Subsystem("Shooter") {
 
 	shooterMotor->SetF(0.0328);	//0.0328		//0.02
 	shooterMotor->SetP(0.1);	//0.0005		//0.1
-	shooterMotor->SetI(0.0001);	//0.00000003	//0.0001
+	shooterMotor->SetI(0.0002);	//0.00000003	//0.0001
 	shooterMotor->SetD(0.0);	//0				//0
 
     shooterMotor->SetControlMode(frc::CANSpeedController::kSpeed);
@@ -92,3 +92,10 @@ void Shooter::SetHoodPosition(double position){
 	hood->Set(position);
 }
 
+void Shooter::SetPIDControlSlot(int slot){
+	shooterMotor->SelectProfileSlot(slot);
+}
+
+int Shooter::GetFlywheelSpeed(){
+	return shooterMotor->GetSpeed();
+}

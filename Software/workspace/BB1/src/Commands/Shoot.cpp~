@@ -34,12 +34,11 @@ Shoot::Shoot(): Command() {
 
 // Called just before this Command runs the first time
 void Shoot::Initialize() {
-
+//set PID control slot to 0 for quick ramp up.
 }
 
 // Called repeatedly when this Command is scheduled to run
 void Shoot::Execute() {
-
 
 		shared_ptr<NetworkTable> myTable = NetworkTable::GetTable("Vision"); // setup network table from RPi
 		double distance = 0.0 ; // distance provided by RPi is float
@@ -58,14 +57,26 @@ void Shoot::Execute() {
 	    	speed = mytest.speed;  // get speed in RPM
 	    	position = mytest.position;  // get position
 	    }
+	    else{
+	    	speed = -2100;
+	    	position = 40;
+	    }
 
         printf("%d shooter speed %d shooter position\n", speed, position);
 
-		//Robot::shooter->SetHoodPosition(position/100);
-		//Robot::shooter->Spin(speed);
+    	//check if we're within 5% of the set point. If we are, set slot to 0.
+    	static bool inRange = false;							//Initialises flag for when we get in range of target speed
+    	int flywheelSpeed = Robot::shooter->GetFlywheelSpeed();
+    	if((abs(speed - flywheelSpeed)/speed) < 5){			//If we're within 5%, set flag to true
+    		inRange = true;
+    	}
+    	if(inRange){											//If flag is true, then change PID parameter
+    		Robot::shooter->SetPIDControlSlot(1);
+    	}
 
-        Robot::shooter->SetHoodPosition(0.2);
-        Robot::shooter->Spin(-2100);
+		Robot::shooter->SetHoodPosition(position/100);
+		Robot::shooter->Spin(speed);
+
         //TODO get rid of previous lines and then replace interp stuff
 	    printf("shooter execute\n");
 }

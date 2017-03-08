@@ -40,3 +40,7 @@ void Gear::InitDefaultCommand() {
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
 
+bool Gear::CheckGearState(){
+	return gearDetector->Get();
+}
+

@@ -38,12 +38,6 @@ void DriveWithJoysticks::Execute() {
 	Robot::drive->ArcadeDriveJoystick(Robot::oi->getDriver()->GetRawAxis(1),
 			Robot::oi->getDriver()->GetRawAxis(4));
 	//Murali: Gets joystick values and passes them to the DriveWithJoysticks submethod
-
-	//Print Pigeon values
-	double yaw = NormalizeAngle(GetYaw());
-	printf("Yaw: %f \n", yaw);
-
-
 }
 
 // Make this return true when this Command no longer needs to run execute()
