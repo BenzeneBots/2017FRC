@@ -37,11 +37,10 @@ void AutonomousDriveStraight::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void AutonomousDriveStraight::Execute() {
-
 	double leftEncVal = Robot::drive->GetLeftEncoderValue();
 	double rightEncVal = Robot::drive->GetRightEncoderValue();	//Gets left and right encoder values in inches
 
-//poll encoder values, if one's ahead of the other, reduce slightly
+	//poll encoder values, if one's ahead of the other, reduce slightly
 	if(m_distance >= 0){	//if going forward
 		if(abs(leftEncVal - rightEncVal) > .5){
 			if(leftEncVal > rightEncVal){ //if left side is going faster than right side
@@ -79,6 +78,14 @@ bool AutonomousDriveStraight::IsFinished() {
 		return false;
 	}
 }
+/*	static int loops = 0;
+	loops += 1;
+	if(loops > 200){//loop constant times seconds
+		return true;
+	}
+	return false;
+}*/
+
 
 // Called once after isFinished returns true
 void AutonomousDriveStraight::End() {

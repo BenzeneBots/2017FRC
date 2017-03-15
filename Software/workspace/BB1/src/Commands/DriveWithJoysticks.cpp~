@@ -38,6 +38,13 @@ void DriveWithJoysticks::Execute() {
 	Robot::drive->ArcadeDriveJoystick(Robot::oi->getDriver()->GetRawAxis(1),
 			Robot::oi->getDriver()->GetRawAxis(4));
 	//Murali: Gets joystick values and passes them to the DriveWithJoysticks submethod
+
+	double rightEncVal = Robot::drive->GetRightEncoderValue();
+	printf("Right enc: %f\n", rightEncVal);
+
+	double leftEncVal = Robot::drive->GetLeftEncoderValue();
+	printf("Left enc: %f\n", leftEncVal);
+
 }
 
 // Make this return true when this Command no longer needs to run execute()

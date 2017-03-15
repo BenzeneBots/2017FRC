@@ -37,8 +37,7 @@ void FloorLoad::Execute() {
 	else{
 		Robot::intake->SpinForward();
 	}
-	double current = Robot::intake->GetCurrent();
-	printf("Channel 10 Current: %f\n", current);
+
 }
 
 // Make this return true when this Command no longer needs to run execute()

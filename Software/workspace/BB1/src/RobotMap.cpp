@@ -23,9 +23,9 @@ std::shared_ptr<RobotDrive> RobotMap::driveDrivetrain;
 std::shared_ptr<Encoder> RobotMap::driveLeftDriveEncoder;
 std::shared_ptr<Encoder> RobotMap::driveRightDriveEncoder;
 std::shared_ptr<SpeedController> RobotMap::intakeIntakeMotor;
-std::shared_ptr<PowerDistributionPanel> RobotMap::intakePowerDistributionPanel1;
 std::shared_ptr<SpeedController> RobotMap::movingFloorFloorMotor;
 std::shared_ptr<SpeedController> RobotMap::climberClimberMotor;
+std::shared_ptr<PowerDistributionPanel> RobotMap::climberPowerDistributionPanel1;
 std::shared_ptr<DoubleSolenoid> RobotMap::shifterDriveShifter;
 std::shared_ptr<CANTalon> RobotMap::shooterShooterMotor;
 std::shared_ptr<Servo> RobotMap::shooterHood;
@@ -49,8 +49,7 @@ void RobotMap::init() {
         driveDrivetrain->SetExpiration(0.1);
         driveDrivetrain->SetSensitivity(0.5);
         driveDrivetrain->SetMaxOutput(1.0);
-        driveDrivetrain->SetInvertedMotor(RobotDrive::kRearLeftMotor, true);
-        driveDrivetrain->SetInvertedMotor(RobotDrive::kRearRightMotor, true);
+
     driveLeftDriveEncoder.reset(new Encoder(0, 1, false, Encoder::k4X));
     lw->AddSensor("Drive", "Left Drive Encoder", driveLeftDriveEncoder);
     driveLeftDriveEncoder->SetDistancePerPulse(0.0491);
@@ -62,19 +61,19 @@ void RobotMap::init() {
     intakeIntakeMotor.reset(new VictorSP(2));
     lw->AddActuator("Intake", "IntakeMotor", std::static_pointer_cast<VictorSP>(intakeIntakeMotor));
     
-    intakePowerDistributionPanel1.reset(new PowerDistributionPanel(0));
-    lw->AddSensor("Intake", "PowerDistributionPanel 1", intakePowerDistributionPanel1);
-    
     movingFloorFloorMotor.reset(new VictorSP(3));
     lw->AddActuator("Moving Floor", "FloorMotor", std::static_pointer_cast<VictorSP>(movingFloorFloorMotor));
     
     climberClimberMotor.reset(new VictorSP(4));
     lw->AddActuator("Climber", "Climber Motor", std::static_pointer_cast<VictorSP>(climberClimberMotor));
     
+    climberPowerDistributionPanel1.reset(new PowerDistributionPanel(0));
+    lw->AddSensor("Climber", "PowerDistributionPanel 1", climberPowerDistributionPanel1);
+    
     shifterDriveShifter.reset(new DoubleSolenoid(0, 0, 1));
     lw->AddActuator("Shifter", "DriveShifter", shifterDriveShifter);
     
-    shooterShooterMotor.reset(new CANTalon(14));
+    shooterShooterMotor.reset(new CANTalon(11));
     lw->AddActuator("Shooter", "ShooterMotor", shooterShooterMotor);
     
     shooterHood.reset(new Servo(5));

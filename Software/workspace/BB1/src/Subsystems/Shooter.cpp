@@ -35,7 +35,7 @@ Shooter::Shooter() : Subsystem("Shooter") {
 
     //Initializes the Talon and sets sensor information
 	shooterMotor->SetFeedbackDevice(CANTalon::CtreMagEncoder_Relative); //CtreMagEncoder_Relative was old value
-	shooterMotor->SetSensorDirection(-1);
+	shooterMotor->SetSensorDirection(false);
 	shooterMotor->ConfigEncoderCodesPerRev(4096);
 
 	shooterMotor->SetAllowableClosedLoopErr(0);
@@ -69,12 +69,11 @@ void Shooter::InitDefaultCommand() {
 
 void Shooter::Spin(double speed){
 
-	shooterMotor->Set(speed); //temporary fix, use speed input later
+	shooterMotor->Set(speed);
 
-	SmartDashboard::PutNumber("SetPt", -1.0 * speed);			//pushes set point speed to dashboard
-
+	SmartDashboard::PutNumber("GraphSetPt", -1.0 * speed);			//pushes set point speed to dashboard
 	int sensorSpeed = shooterMotor->GetSpeed();			//gets current speed value from Talon
-	SmartDashboard::PutNumber("Speed", sensorSpeed);	//pushes value to Smart Dashboard
+	SmartDashboard::PutNumber("GraphSpeed", sensorSpeed);	//pushes value to Smart Dashboard
 
 
 
@@ -82,8 +81,8 @@ void Shooter::Spin(double speed){
 
 void Shooter::Stop(){
 	shooterMotor->Set(0.0);
-	SmartDashboard::PutNumber("Speed", 0.0);
-	SmartDashboard::PutNumber("SetPt", 0.0);			//graphs 0 as final set point and speed
+	SmartDashboard::PutNumber("GraphSpeed", 0.0);
+	SmartDashboard::PutNumber("GraphSetPt", 0.0);			//graphs 0 as final set point and speed
 
 
 	printf("STOP shooter\n");

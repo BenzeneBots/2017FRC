@@ -33,9 +33,9 @@ public:
 	static std::shared_ptr<Encoder> driveLeftDriveEncoder;
 	static std::shared_ptr<Encoder> driveRightDriveEncoder;
 	static std::shared_ptr<SpeedController> intakeIntakeMotor;
-	static std::shared_ptr<PowerDistributionPanel> intakePowerDistributionPanel1;
 	static std::shared_ptr<SpeedController> movingFloorFloorMotor;
 	static std::shared_ptr<SpeedController> climberClimberMotor;
+	static std::shared_ptr<PowerDistributionPanel> climberPowerDistributionPanel1;
 	static std::shared_ptr<DoubleSolenoid> shifterDriveShifter;
 	static std::shared_ptr<CANTalon> shooterShooterMotor;
 	static std::shared_ptr<Servo> shooterHood;

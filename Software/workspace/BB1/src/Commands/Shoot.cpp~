@@ -14,6 +14,8 @@
 
 #include <ntcore.h>
 #include "NetworkTables/NetworkTable.h"
+#include "LiveWindow/LiveWindow.h"
+
 
 using std::shared_ptr;
 using namespace std;
@@ -39,6 +41,8 @@ void Shoot::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void Shoot::Execute() {
+		double setPt;
+
 
 		shared_ptr<NetworkTable> myTable = NetworkTable::GetTable("Vision"); // setup network table from RPi
 		double distance = 0.0 ; // distance provided by RPi is float
@@ -58,14 +62,16 @@ void Shoot::Execute() {
 	    	position = mytest.position;  // get position
 	    }
 	    else{
-	    	speed = -2100;
+	    	//setPt = SmartDashboard::GetNumber("SetPt", 2300.0);
+	    	speed = -2300;//-1.0 * setPt; //-2300
 	    	position = 40;
 	    }
 
         printf("%d shooter speed %d shooter position\n", speed, position);
 
     	//check if we're within 5% of the set point. If we are, set slot to 0.
-    	static bool inRange = false;							//Initialises flag for when we get in range of target speed
+
+        static bool inRange = false;							//Initialises flag for when we get in range of target speed
     	int flywheelSpeed = Robot::shooter->GetFlywheelSpeed();
     	if((abs(speed - flywheelSpeed)/speed) < 5){			//If we're within 5%, set flag to true
     		inRange = true;
@@ -74,11 +80,14 @@ void Shoot::Execute() {
     		Robot::shooter->SetPIDControlSlot(1);
     	}
 
-		Robot::shooter->SetHoodPosition(position/100);
+
+        Robot::shooter->SetHoodPosition(position/100);
 		Robot::shooter->Spin(speed);
+
 
         //TODO get rid of previous lines and then replace interp stuff
 	    printf("shooter execute\n");
+	    printf("Set pt: %d\n", speed);
 }
 
 // Make this return true when this Command no longer needs to run execute()
