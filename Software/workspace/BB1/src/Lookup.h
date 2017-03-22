@@ -12,14 +12,14 @@ typedef struct {int speed; int position;} results;  // return value data structu
 
 static const params lut[size] = // look up table hard coded values - CHANGE HERE
 {
-{100, 120, 10},
-{200, 150, 20},
-{300, 180, 30},
-{400, 200, 40},
-{500, 220, 50},
-{600, 240, 60},
-{700, 300, 70},
-{800, 340, 80},
+{1, 120, 10},
+{2, 150, 20},
+{3, 180, 30},
+{4, 200, 40},
+{5, 220, 50},
+{6, 240, 60},
+{7, 300, 70},
+{8, 340, 80},
 };
 
 results interp(int myrange); // function prototype

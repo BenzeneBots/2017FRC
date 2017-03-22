@@ -41,7 +41,7 @@ void Shoot::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void Shoot::Execute() {
-		double setPt;
+		//double setPt;
 
 
 		shared_ptr<NetworkTable> myTable = NetworkTable::GetTable("Vision"); // setup network table from RPi

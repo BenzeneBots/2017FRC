@@ -45,6 +45,9 @@ void DriveWithJoysticks::Execute() {
 	double leftEncVal = Robot::drive->GetLeftEncoderValue();
 	printf("Left enc: %f\n", leftEncVal);
 
+	double gyro = Pigeon::GetYaw();
+	printf("Yaw: %f\n", gyro);
+
 }
 
 // Make this return true when this Command no longer needs to run execute()
