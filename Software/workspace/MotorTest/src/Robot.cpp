@@ -31,13 +31,14 @@ Encoder *leftPos;
 Encoder *rightPos;
 PowerDistributionPanel *pdb;
 Joystick *xbox1;
+//PIDController *leftPID;
 
 public:
 	//std::shared_ptr<SpeedController> m1;
 
 	void RobotInit() override {
 		//chooser.AddDefault("Default Auto", new ExampleCommand());
-		// chooser.AddObject("My Auto", new MyAutoCommand());
+		//chooser.AddObject("My Auto", new MyAutoCommand());
 		//frc::SmartDashboard::PutData("Auto Modes", &chooser);
 
 		xbox1 = new Joystick( 0 );
@@ -53,11 +54,23 @@ public:
 		intakeMotor = new Victor( 2 );
 		intakeMotor->SetSafetyEnabled( false );
 
-		leftPos = new Encoder( 0, 1 );
+		leftPos = new Encoder( 0, 1, Encoder::EncodingType::k4X );
+		//leftPos->SetMaxPeriod( 10000.0 );
+		//leftPos->SetMinRate( -10000.0 );
 		leftPos->Reset();
 
-		rightPos = new Encoder( 2, 3 );
+		rightPos = new Encoder( 2, 3, Encoder::EncodingType::k4X );
 		rightPos->Reset();
+
+		/*
+		double kP=1.0, kI=0.0, kD=0.0, kFF=0.0;
+		leftPID = new PIDController( kP, kI, kD, kFF, leftPos, leftDrive );
+		leftPID->SetPIDSourceType( PIDSourceType::kRate );
+		leftPID->SetOutputRange( -0.2, 0.2 );
+		leftPID->SetInputRange( -1000.0, 1000.0 );
+		leftPID->SetSetpoint( 0.0 );
+		leftPID->Enable();
+		*/
 
 		hoodMotor = new CANTalon( 16 );
 		hoodMotor->SetFeedbackDevice(CANTalon::CtreMagEncoder_Relative);
@@ -177,11 +190,90 @@ public:
 		frc::Scheduler::GetInstance()->Run();
 	}
 
+	// When enFlg is true, auto align and center the robot onto the target. Call this
+	// function often from a periodic loop.
+	// ========================================================================
+	int visAutoCenter( bool enFlg, double visDist, double visCenter, bool visLock ) {
+		int ret = 0;									// 1=Done, 0=Working, -1=Timeout
+		const int cntTO_Reset = 500;					// Timeout Reset Value
+		static int printLoops=0, cntTO=cntTO_Reset;
+		static double out=0.0;
+		//char s[100];
+
+		const double rate = 0.005;
+		const double maxOut = 0.25;
+		const double deadband = 0.03;
+
+		//sscanf( SmartDashboard::GetString( "DB/String 0", "0.01" ), "%f", &rate );
+		//const double maxOut = scanf( "%f", SmartDashboard::GetString( "DB/String 1", "0.0" ) );
+		//const double deadband = scanf( "%f", SmartDashboard::GetString( "DB/String 2", "10.0" ) );
+
+		if( enFlg == false ) {
+			out = 0.0;
+			ret = -1;
+		}
+
+		if( enFlg && (visLock == false) ) {
+			leftDrive->Set( 0.0 );
+			rightDrive->Set( 0.0 );
+			out = 0.0;
+			ret = -1;
+		}
+
+		if( enFlg && visLock ) {
+			// Test if we're in the deadband...
+			if( (visCenter < deadband) && (visCenter > (deadband*-1.0)) ) {
+				printf( "visAutoCenter Complete\n" );
+				cntTO = cntTO_Reset;
+				ret = 1;
+				leftDrive->Set( 0.0 );
+				rightDrive->Set( 0.0 );
+				out = 0.0;
+			}
+			else {
+				if( --cntTO <= 0 ) {
+					leftDrive->Set( 0.0 );
+					rightDrive->Set( 0.0 );
+					cntTO = cntTO_Reset;
+					ret = -1;					// Return a timeout state.
+					out = 0.0;
+				}
+				else {
+					ret = 0;
+					if( out < maxOut )	out += rate;
+					if( visCenter > 0.0 ) {
+						leftDrive->Set( out );
+						rightDrive->Set( out );
+					}
+					else {
+						leftDrive->Set( out * -1.0 );
+						rightDrive->Set( out * -1.0  );
+					}
+				}
+			}
+		}
+		else {
+			cntTO = cntTO_Reset;	// Reset timeout to auto center.
+			ret = -1;				// If enable or lock is false then return timeout.
+			out = 0.0;
+		}
+
+		// Paced debug printing...
+		if( --printLoops <= 0 ) {
+			printLoops = 30;
+			//printf( "visAutoCenter: %0.2f\n", out );
+		}
+
+		return ret;
+	}
+
 	void TestPeriodic() override {
 		frc::Scheduler::GetInstance()->Run();
 		static int visCntOld=0, visTimeout=0;
 		static int piDebugTO = 50;
 		static bool visDebugOld = false;
+		static double visDist=0.0, visCenter=0.0;
+		static bool visLock=false;
 
 		//static int printLoops = 0;
 		static int m1Start = 0;
@@ -211,6 +303,7 @@ public:
 		//sprintf( s, "IMU Heading: %0.2f", imuHeading );
 		//SmartDashboard::PutString("DB/String 6", s);
 		SmartDashboard::PutNumber( "imuHeading", imuHeading );
+		//SmartDashboard::PutNumber( "leftEncoder", leftPos->GetRaw() );
 		SmartDashboard::PutNumber( "leftEncoder", leftPos->GetRaw() );
 		SmartDashboard::PutNumber( "rightEncoder", rightPos->GetRaw() );
 		SmartDashboard::PutNumber( "deltaEncoder", leftPos->GetRaw() - rightPos->GetRaw() );
@@ -225,10 +318,12 @@ public:
 		// Based on a toggle switch on the dashboard, either use the dashboard or the joystick to
 		// control the drive motors.
 		if( SmartDashboard::GetBoolean("joyEn", false) == false ) {
+
 			double lMotor = SmartDashboard::GetNumber( "leftDrive", 0.0 );
 			leftDrive->Set( lMotor / 100.0 );
 			double rMotor = SmartDashboard::GetNumber( "rightDrive", 0.0 );
 			rightDrive->Set( rMotor / 100.0 );
+
 		}
 		else {
 			// This code drives the motors in Arcade style using the joystick input.
@@ -314,13 +409,13 @@ public:
 		}
 		// Else, the Pi counter IS moving so all is good.
 		else {
-			double center = table->GetNumber( "Center", 0.0 );
-			SmartDashboard::PutNumber( "visCenter", center );
-			double dist = table->GetNumber( "Distance", 0.0 );
-			SmartDashboard::PutNumber( "visDist", dist );
-			double visLock = table->GetNumber( "TargetFound", 0.0 );
-			if( visLock > 0.5 ) SmartDashboard::PutBoolean( "visLock", true );
-			else				SmartDashboard::PutBoolean( "visLock", false );
+			visCenter = table->GetNumber( "Center", 0.0 );
+			SmartDashboard::PutNumber( "visCenter", visCenter );
+			visDist = table->GetNumber( "Distance", 0.0 );
+			SmartDashboard::PutNumber( "visDist", visDist );
+			visLock = table->GetBoolean( "TargetFound", false );
+			if( visLock  )  SmartDashboard::PutBoolean( "visLock", true );
+			else			SmartDashboard::PutBoolean( "visLock", false );
 			SmartDashboard::PutBoolean( "visOK", true );
 
 			visCntOld = visCnt;		// Update old compare counter.
@@ -336,6 +431,12 @@ public:
 		if( piDebugTO > 0 ) {
 			piDebugTO -= 1;
 			if( piDebugTO == 0 ) SmartDashboard::PutBoolean( "visDebug", false );
+		}
+
+		bool visAutoCenterFlg = SmartDashboard::GetBoolean( "visAutoCenter", false );
+		int flgVisAuto = visAutoCenter( visAutoCenterFlg, visDist, visCenter, visLock );
+		if( (flgVisAuto == -1) || (flgVisAuto == 1) ) {
+			SmartDashboard::PutBoolean( "visAutoCenter", false );
 		}
 
 		// Shooter Hood Control
