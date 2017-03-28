@@ -10,10 +10,11 @@
 
 namespace Pigeon {
 
-int NormalizeAngle(int);
-void ResetYaw();
-double GetYaw();
-double GetFusedHeading();
+	int NormalizeAngle(int);
+	void ResetYaw();
+	void ResetFusedHeading();
+	double GetYaw();
+	double GetFusedHeading();
 }
 
 #endif /* SRC_PIGEON_H_ */

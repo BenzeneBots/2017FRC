@@ -37,7 +37,7 @@ void DriveWithJoysticks::Initialize() {
 void DriveWithJoysticks::Execute() {
 	Robot::drive->ArcadeDriveJoystick(Robot::oi->getDriver()->GetRawAxis(1),
 			Robot::oi->getDriver()->GetRawAxis(4));
-	//Murali: Gets joystick values and passes them to the DriveWithJoysticks submethod
+	//Gets joystick values and passes them to the DriveWithJoysticks submethod
 
 	double rightEncVal = Robot::drive->GetRightEncoderValue();
 	printf("Right enc: %f\n", rightEncVal);
@@ -47,7 +47,6 @@ void DriveWithJoysticks::Execute() {
 
 	double gyro = Pigeon::GetYaw();
 	printf("Yaw: %f\n", gyro);
-
 }
 
 // Make this return true when this Command no longer needs to run execute()

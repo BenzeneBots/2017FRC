@@ -17,6 +17,7 @@
 #include "Commands/AutonomousCommand.h"
 #include "Commands/AutonomousCrossLine.h"
 #include "Commands/AutonomousDriveStraight.h"
+#include "Commands/AutonomousRightGear.h"
 #include "Commands/AutonomousShootBalls.h"
 #include "Commands/AutonomousTurnLeft.h"
 #include "Commands/AutonomousTurnRight.h"
@@ -37,7 +38,7 @@ OI::OI() {
     manipulator.reset(new Joystick(1));
     
     manipY.reset(new JoystickButton(manipulator.get(), 4));
-    manipY->WhenPressed(new SetGearFlap(1));
+    manipY->WhenPressed(new SetGearFlap());
     manipB.reset(new JoystickButton(manipulator.get(), 2));
     manipB->WhenPressed(new Liftoff(1.0));
     manipX.reset(new JoystickButton(manipulator.get(), 3));
@@ -58,6 +59,7 @@ OI::OI() {
     drvLT->WhileHeld(new ShiftGears(1));
 
     // SmartDashboard Buttons
+    SmartDashboard::PutData("AutonomousRightGear", new AutonomousRightGear());
     SmartDashboard::PutData("AgitateBalls", new AgitateBalls());
     SmartDashboard::PutData("Shoot", new Shoot());
     SmartDashboard::PutData("Drive With Joysticks: defJoy", new DriveWithJoysticks(0, 0, 0));

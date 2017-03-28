@@ -93,6 +93,8 @@ void Robot::TeleopInit() {
 
 	printf("TeleopInit\n");
 
+	Robot::drive->ResetEncoders();
+
 
 }
 

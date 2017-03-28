@@ -11,8 +11,8 @@
 #include "AutonomousDriveStraight.h"
 #include "Pigeon.h"
 
-#define SPEED_ADJ_RATE 0
-#define ANGLE_ERROR 1.5
+#define SPEED_ADJ_RATE 0.0006
+#define ANGLE_ERROR 0.3
 
 double leftSpeed;
 double rightSpeed;
@@ -34,10 +34,17 @@ AutonomousDriveStraight::AutonomousDriveStraight(double distance): Command() {
 void AutonomousDriveStraight::Initialize() {
 	Robot::drive->ResetEncoders(); //Resets encoders so that they start at 0
 	Pigeon::ResetYaw();
+
 	printf("init");
 
-	rightSpeed = -0.19;
-	leftSpeed = -0.2;
+	if(m_distance > 0){
+		rightSpeed = -0.205;
+		leftSpeed = -0.180;
+	}
+	else if (m_distance < 0){
+		rightSpeed = 0.205;
+		leftSpeed = 0.180;
+	}
 
 
 }
@@ -49,9 +56,11 @@ void AutonomousDriveStraight::Execute() {
 	if(m_distance >= 0){
 		if(currentYaw > ANGLE_ERROR){ 		//if we're veering to the left going forward
 			rightSpeed += SPEED_ADJ_RATE;	//slow down the right side
+			leftSpeed -= SPEED_ADJ_RATE;
 		}
-		else{								//if we're veering to the right going forward
+		else if(currentYaw < (-1.0 * ANGLE_ERROR)){								//if we're veering to the right going forward
 			leftSpeed += SPEED_ADJ_RATE;	//slow down the left side
+			rightSpeed -= SPEED_ADJ_RATE;
 		}
 	}
 	else if(m_distance < 0){
@@ -59,10 +68,10 @@ void AutonomousDriveStraight::Execute() {
 		leftSpeed *= -1.0;
 
 		if(currentYaw > ANGLE_ERROR){		//if we're veering to the left going backwards
-			rightSpeed += SPEED_ADJ_RATE;	//slow down right side by making it closer to 0
+			rightSpeed -= SPEED_ADJ_RATE;	//slow down right side by making it closer to 0
 		}
-		else{
-			leftSpeed += SPEED_ADJ_RATE;
+		else if (currentYaw < (-1.0 * ANGLE_ERROR)){
+			leftSpeed -= SPEED_ADJ_RATE;
 		}
 	}
 
@@ -75,7 +84,7 @@ void AutonomousDriveStraight::Execute() {
 bool AutonomousDriveStraight::IsFinished() {
 
 	double driveEncVal = Robot::drive->GetLeftEncoderValue();
-	if(m_distance-driveEncVal < 1){
+	if(m_distance-driveEncVal < 1.5){
 		return true;
 	}
 	else{
@@ -89,6 +98,7 @@ bool AutonomousDriveStraight::IsFinished() {
 // Called once after isFinished returns true
 void AutonomousDriveStraight::End() {
 	Robot::drive->TankDrive(0.0, 0.0);
+	Robot::drive->ResetEncoders();
 }
 
 // Called when another command which requires one or more of the same

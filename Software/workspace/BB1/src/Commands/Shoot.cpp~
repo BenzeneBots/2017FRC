@@ -41,25 +41,12 @@ void Shoot::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void Shoot::Execute() {
-		//double setPt;
-
-
-		shared_ptr<NetworkTable> myTable = NetworkTable::GetTable("Vision"); // setup network table from RPi
-		double distance = 0.0 ; // distance provided by RPi is float
-		int dist = 0; // distance in look up table is integer
-
-		int speed, position; // speed and position variables
-		speed = 45;        // default speed
-		position = 99;      // default position
-
-		myTable->GetNumber("Distance", distance); // get distance from network tables
-		dist = int(distance); // convert to integer
-
-	    results mytest = interp( dist ); // call linear interpolation function
+		double speed;
+		double position;
 
 	    if (vision_working) {
-	    	speed = mytest.speed;  // get speed in RPM
-	    	position = mytest.position;  // get position
+	    	//speed = Vision::getSpeed;  // get speed in RPM
+	    	//position = Vision::getHoodPosition;  // get position
 	    }
 	    else{
 	    	//setPt = SmartDashboard::GetNumber("SetPt", 2300.0);
@@ -67,7 +54,7 @@ void Shoot::Execute() {
 	    	position = 40;
 	    }
 
-        printf("%d shooter speed %d shooter position\n", speed, position);
+        printf("%f shooter speed %f shooter position\n", speed, position);
 
     	//check if we're within 5% of the set point. If we are, set slot to 0.
 
@@ -87,7 +74,7 @@ void Shoot::Execute() {
 
         //TODO get rid of previous lines and then replace interp stuff
 	    printf("shooter execute\n");
-	    printf("Set pt: %d\n", speed);
+	    printf("Set pt: %f\n", speed);
 }
 
 // Make this return true when this Command no longer needs to run execute()

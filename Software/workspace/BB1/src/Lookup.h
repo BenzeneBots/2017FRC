@@ -22,6 +22,7 @@ static const params lut[size] = // look up table hard coded values - CHANGE HERE
 {8, 340, 80},
 };
 
+namespace Lookup{
 results interp(int myrange); // function prototype
-
+}
 #endif /* Lookup_h */

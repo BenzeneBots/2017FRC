@@ -7,7 +7,7 @@
 
 // function to linear interpolate to find RPM and angle from distance look up table
 
-results interp(int myrange)
+results Lookup::interp(int myrange)
 {
     // setup variables
     

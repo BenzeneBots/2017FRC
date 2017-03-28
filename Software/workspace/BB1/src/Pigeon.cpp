@@ -26,6 +26,10 @@ void Pigeon::ResetYaw(){
 	pidgey->SetYaw(0.0);
 }
 
+void Pigeon::ResetFusedHeading(){
+	pidgey->SetFusedHeading(0.0);
+}
+
 double Pigeon::GetYaw(){
 	double ypr_array[3];
 	pidgey->GetYawPitchRoll(ypr_array);
@@ -35,3 +39,4 @@ double Pigeon::GetYaw(){
 double Pigeon::GetFusedHeading(){
 	return pidgey->GetFusedHeading();
 }
+
